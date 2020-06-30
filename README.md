@@ -1,57 +1,51 @@
-# How to run this boilerplate
-> A tutorial on how to create mongodb and cloudinary > accounts, install dependencies and run the project.
+# Elementus-Jr
 
-## 1. Install dependencies
-Run `yarn install` or `npm install` on both client and server folders, thsi command will install the project's dependencies.
+## GitHub
 
-## 2. Create MongoDB cluster and get the url
-1. If you don't have one, [create a mongodb account](https://www.mongodb.com/cloud), then create the cluster for this project.
+### Branches
+They can be:
++ master
++ develop
++ feature
++ bugfix
++ hotfix
 
-2. On the cluster's screen, go to **Database Access > Database Users > Add New Database User**, then create the user (remember the username and password, we're going to need them later).
+Their names must follow this template: `feature/branch-name`
 
-3. Now go to **Network Access > Ip Whitelist > Add IP Adress > Current Ip Adress**, to add your current ip address to the cluster's whitelist, you will need to do this with every source that will access your database.
+### Commits
+Must begin with the name of the branch you developed on, following the model: _“Feature(name-of-feature): rest of commit…”._
 
-4. The mongo url will be:
+Must be simple and show briefly what you just did.
 
-    mongodb://[USER]:[PASSWORD]@[SHARD_URL]/[DB_NAME]?ssl=true&replicaSet=[SHARD_NAME]&authSource=admin&retryWrites=true&w=majority
+Ex: `git commit -m "Feature(banner-parallax): Added the parallax effect to the background"`
 
-## 3. Create cloudinary account
-1. Go to [cloudinary images website](https://cloudinary.com/) and create an account.
+### StyleGuides
+- [AirBnb javascript styleguide](https://github.com/airbnb/javascript) for CommonJS code style
+- [Eslint](https://eslint.org/) for real time error correcting
 
-2. Under the **Account Details** section is a url named **API environment variable** this is your cloudinary url.
+### Pull Requests
 
-## 4. Create a env file
-Create a file named `.env` and, inside of it, place this:
+> This should be the structure of the description when creating a PR
 
-    PORT=[PORT]
-    MONGO_URI=[MONGO_URI]
-    COOKIE_SECRET=[COOKIE_SECRET]
-    CLOUDINARY_URL=[CLOUDINARY_URL]
+```markdown
+**What I Did:**
 
-Where:
-- [PORT] is which port you want the server to run on (usually 3001)
-- [MONGO_URI] is the uri you got from [step 2.3](##-2.-create-mongodb-cluster-and-get-the-url)
-- [COOKIE_SECRET] is a random string used for authentication on the admin.
-- [CLOUDINARY_URL] is the url you got from [step 3.2](##3.-create-cloudinary-account)
+- Describe what you did
+- Describe what you did
 
-## 5. Running in development
-To run this project in development mode, we will need to run two servers, the react one on `/client` and keystone on `/server`.
+**How to Test:**
 
-The command to run react is `yarn start` or `npm start` depending on which tool was used on [installation](##1.-install-dependencies), the react server will run on port `3000` by default.
+- Instruction for other people test your pull request
+- Instruction for other people test your pull request
+```
 
-Before running the keystone server, go to `/server/updates/0.0.1-admin.js` and change the admin user as you want, this user will be the first created, but you will be able to create others and delete this one later.
+## Development Team
 
-To run keystoneJS server, use the command `node index.js`, the server will run on whatever port is in the variale in the env file, you will find the admin interface in `http://localhost:[PORT]/admin`
+* **Samuel Miranda** - *Project Manager* - [labprogsam](https://github.com/labprogsam)
+* **Arthur Luis** - *Fullstack Developer* - [ArthurLuis](https://github.com/ArthurLuis)
+* **Giovani Albuquerque** - *Fullstack Developer* - [Giovaniavs](https://github.com/Giovaniavs)
 
-## 6. Running in production
-To run the server in production, go to `/client` and run the command `yarn server`, this command will create a `react production optimized build` and move it to `/server`.
 
-Then go to `/server` and run `node index.js`, you will find the project on `http://localhost:[PORT]`
-
-- - -
-
-#### Developed by [Jorrmungandr](https://github.com/Jorrmungandr)
-
-This boilerplate was meant to be used in [CITi's](https://github.com/CITi-UFPE) selective process on 2020.1, to help the development of onepage websites.
-
-- - -
+```markdown
+Made with `markdown` and love by CITi
+```
