@@ -1,3 +1,3 @@
 /node_modules
-.env
+CLOUDINARY_URL=cloudinary://879665239919491:1LepP4BIOx9MzxaLCoqDhHimDCU@djnvgbvjb.env
 /public
