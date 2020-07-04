@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import {
-  Example,
-} from './components';
+import Banner from './components/api/banner/Banner';
 
 function App() {
-  return (
-    <section className="app">
-      <Example />
-    </section>
-  );
+  return(
+    <div className="app">
+      <Banner />
+    </div>
+  )
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
