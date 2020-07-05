@@ -1,9 +1,11 @@
 const path = require('path');
 const keystone = require('keystone');
 const cors = require('cors');
+const key = require('keystone/fields/types/key/KeyType');
 
 const Example = keystone.list('Examples');
 const Banner = keystone.list("Banner")
+const Conteudo = keystone.list("Conteudo")
 
 module.exports = (app) => {
   app.use(cors());
@@ -24,6 +26,13 @@ module.exports = (app) => {
       if (err) return res.apiError('database error', err);
       res.send(items);
     });
-  });  
+  });
+
+  app.get('/api/conteudo', (req, res) => {
+    Conteudo.model.find((err, items) => {
+      if (err) return res.apiError('database error', err);
+      res.send(items);
+    });
+  });    
 
 };
