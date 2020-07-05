@@ -3,6 +3,7 @@ const keystone = require('keystone');
 const cors = require('cors');
 
 const Example = keystone.list('Examples');
+const Service = keystone.list('Services');
 
 module.exports = (app) => {
   app.use(cors());
