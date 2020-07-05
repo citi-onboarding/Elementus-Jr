@@ -4,6 +4,7 @@ const cors = require('cors');
 
 const Example = keystone.list('Examples');
 const Service = keystone.list('Services');
+const Depoiment = keystone.list('Depoiments');
 
 module.exports = (app) => {
   app.use(cors());
@@ -21,6 +22,13 @@ module.exports = (app) => {
 
   app.get('/api/services', (req, res) => {
     Service.model.find((err, items) => {
+      if (err) return res.apiError('database error', err);
+      res.send(items);
+    });
+  });  
+
+  app.get('/api/depoiments', (req, res) => {
+    Depoiment.model.find((err, items) => {
       if (err) return res.apiError('database error', err);
       res.send(items);
     });
