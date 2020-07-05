@@ -17,4 +17,12 @@ module.exports = (app) => {
       res.send(items);
     });
   });
+
+  app.get('/api/services', (req, res) => {
+    Service.model.find((err, items) => {
+      if (err) return res.apiError('database error', err);
+      res.send(items);
+    });
+  });  
+
 };
