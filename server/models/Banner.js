@@ -5,8 +5,8 @@ const Banner = new keystone.List("Banner");
 
 Banner.add({
     titulo: { type: Types.Text, required: true, index: true, initial: true },
-    descricao: { type: Types.Text },
-    imagem: { type: Types.CloudinaryImage },
+    descricao: { type: Types.Text, required: true, index: true, initial: true },
+    imagem: { type: Types.CloudinaryImage, required: true, index: true, initial: true },
 });
 
 Banner.register();
