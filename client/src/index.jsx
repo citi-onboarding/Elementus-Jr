@@ -1,16 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import {
-  Example,
-} from './components';
-
 function App() {
-  return (
-    <section className="app">
-      <Example />
-    </section>
-  );
+  return(
+    <div className="app">
+    </div>
+  )
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
