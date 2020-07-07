@@ -13,4 +13,4 @@ Service.add({
   Link: { type: Types.Text, initial: true, required: true, index: true },
 });
 
-Service.register(); 
+Service.register();

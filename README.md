@@ -18,11 +18,13 @@ After doing this, you need to add your IP address to the mongoDB whitelist.
 Create **.env** file and copy the following content to it
 
 ```bash
-PORT=3001
-MONGO_URI=mongodb://ElementusC:VV2CMf47X8AFEcY@clusterej-shard-00-01.6jmt7.mongodb.net:27017/PROJECT-0?ssl=true&replicaSet=atlas-qlu6p1-shard-0&authSource=admin&retryWrites=true&w=majority
-COOKIE_SECRET=37cf34ecb5221cdea658f6729fc48d75
-CLOUDINARY_URL=cloudinary://879665239919491:1LepP4BIOx9MzxaLCoqDhHimDCU@djnvgbvjb
+PORT=<PORT>
+MONGO_URI=<MONGO_URI>
+COOKIE_SECRET=<COOKIE_SECRET>
+CLOUDINARY_URL=<CLOUDINARY_URL>
 ```
+
+ps: Replace `<environment variable>` with the actual data used in the application
 
 ### Running in development
 To run this project in development mode, we will need to run two servers, the react one on `/client` and keystone on `/server`.
