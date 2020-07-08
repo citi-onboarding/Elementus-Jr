@@ -11,8 +11,16 @@ function Navbar(){
     window.onscroll = scroll;
 
     function scroll () {
-        navbar[0].classList.add("navbarScrolled");
-        img[0].classList.add("imgScrolled")
+        if(window.scrollY === 0) {
+            if (navbar[0].classList.contains("navbarScrolled")){
+                navbar[0].classList.remove("navbarScrolled")
+                navbar[0].classList.add("navbar");
+            }
+            //console.log(window.scrollY)    
+         } else {
+            navbar[0].classList.add("navbarScrolled");
+            img[0].classList.add("imgScrolled")
+        }
     };
     return(
         <div>
