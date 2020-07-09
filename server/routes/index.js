@@ -6,6 +6,7 @@ const key = require('keystone/fields/types/key/KeyType');
 const Service = keystone.list('Services');
 const Depoiment = keystone.list('Depoiments');
 const Conteudo = keystone.list("Conteudo")
+
 const Banner = keystone.list("Banner")
 
 module.exports = (app) => {
@@ -35,6 +36,20 @@ module.exports = (app) => {
       res.send(items);
     });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   app.get('/api/banner', (req, res) => {
     Banner.model.find((err, items) => {
