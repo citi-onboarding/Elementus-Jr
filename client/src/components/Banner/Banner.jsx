@@ -28,7 +28,7 @@ function Banner() {
           <div className="Texts">
             <p className="Title">{titulo}</p>
             <p className="Description">{descricao}</p>
-            <Button Title="Contate-nos" buttonColor="#00005A" buttonSize= "200px"/>
+            <Button Title="Contate-nos" buttonColor="#00005A" buttonSize= "180px"/>
           </div>  
         </div>
         ))}

@@ -8,5 +8,11 @@
   opacity: 1;
   border: none;
   color: aliceblue;
-  height: 50px;
+  height: 40px;
+  
+}
+
+.text{
+  margin: 10px;
+
 }

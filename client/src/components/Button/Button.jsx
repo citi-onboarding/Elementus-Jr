@@ -10,7 +10,7 @@ const Button = ({
   return (
     <div>
       <button style={{ backgroundColor: buttonColor, width: buttonSize}} className = {'button'} >
-          <p>{Title}</p>
+          <p className="text">{Title}</p>
       </button>
     </div>
 );
