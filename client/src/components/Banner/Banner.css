@@ -35,3 +35,19 @@
     color: #414141;
     opacity: 1;
 }
+
+@media(max-width: 1000px) {
+  .Texts{
+    margin:0;
+  }
+  .Title{
+  font-size: 21px;
+  max-width: 250;
+  }  
+  .Description{
+  font-size: 8px;
+  max-width: 200px;  
+  }  
+}
+
+
