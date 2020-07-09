@@ -6,6 +6,7 @@ const key = require('keystone/fields/types/key/KeyType');
 const Service = keystone.list('Services');
 const Depoiment = keystone.list('Depoiments');
 const Conteudo = keystone.list("Conteudo")
+const Banner = keystone.list("Banner")
 
 module.exports = (app) => {
   app.use(cors());
@@ -33,5 +34,12 @@ module.exports = (app) => {
       if (err) return res.apiError('database error', err);
       res.send(items);
     });
-  });    
+  });
+
+  app.get('/api/banner', (req, res) => {
+    Banner.model.find((err, items) => {
+      if (err) return res.apiError('database error', err);
+      res.send(items);
+    });
+  });   
 };

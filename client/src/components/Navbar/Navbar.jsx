@@ -15,6 +15,8 @@ function Navbar(){
             if (navbar[0].classList.contains("navbarScrolled")){
                 navbar[0].classList.remove("navbarScrolled")
                 navbar[0].classList.add("navbar");
+                img[0].classList.remove("imgScrolled")
+                img[0].classList.add("img")
             }
          } else {
             navbar[0].classList.add("navbarScrolled");
