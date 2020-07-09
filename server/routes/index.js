@@ -9,6 +9,7 @@ const Conteudo = keystone.list("Conteudo")
 const Trilha = keystone.list("Trilha")
 const Banner = keystone.list("Banner")
 
+
 module.exports = (app) => {
   app.use(cors());
 
@@ -36,6 +37,7 @@ module.exports = (app) => {
       res.send(items);
     });
   });
+
 
   app.get('/api/trilha', (req, res) => {
     Trilha.model.find((err, items) => {
