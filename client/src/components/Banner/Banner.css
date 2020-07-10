@@ -1,22 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .Banner-image{
-    width: 73vw;
-  }
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
-.Banner{
-  position: fixed;
-  right: 0;
+.Banner {
+  height: 100vh;
+  width: 80%;
+}
+
+.container {
+  width: 20%;
+  height: 100%;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .Texts{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 100px;
-    margin-top: 200px;
-    position: absolute;
     font-family: 'Poppins', sans-serif;
+    position: absolute;
+    margin-left: 5vw;
 }
 
 .Title{
@@ -39,6 +52,10 @@
 }
 
 @media(max-width: 700px) {
+  .container {
+    width: 0;
+  }
+
   .Texts{
     margin-left: 0px;
     margin-top: 0px;
@@ -58,6 +75,7 @@
     max-width: 20rem;  
   }  
   .Banner{  
+    width: 100%;
     left: -250px;
   }
 
