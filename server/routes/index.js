@@ -8,7 +8,6 @@ const Banner = keystone.list("Banner");
 const Depoiment = keystone.list('Depoiments');
 const Conteudo = keystone.list("Conteudo");
 const Trilha = keystone.list("Trilha");
-const Banner = keystone.list("Banner");
 const InfoEmpresa = keystone.list("InfoEmpresa");
 
 
