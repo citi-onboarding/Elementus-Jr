@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contato.css";
-import imgContato from "./Contato.png"
-
+import imgContato from "./Contato.png";   
 
 function Contato(){
     return(
@@ -21,6 +20,7 @@ function Contato(){
                         <input className="inputTelefone" type="Number" placeholder="Telefone"/>
                         <textarea className="inputMensagem" type="Textarea" placeholder="Mensagem"/>
                     </div>
+                    <button className="buttonEnviar">Enviar</button>
                 </div>
             </div>
         </div>
