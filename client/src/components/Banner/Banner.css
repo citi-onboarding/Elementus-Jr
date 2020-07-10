@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .Banner-image{
-    height: 90vh;
-    width: 85vw;
+    width: 73vw;
   }
 
 .Banner{
   position: fixed;
   right: 0;
-  margin-left: 2vw;
 }
 
 .Texts{
@@ -22,45 +20,49 @@
 }
 
 .Title{
-    max-width: 22rem;
-    font-size: 2.5rem;
+    max-width: 35rem;
+    font-size: 3.0rem;
     max-height: 60px;
     letter-spacing: 0px;
     color: #414141;
     opacity: 1;
-    font-family: medium;
+    font-weight: 500;
 }
 
 .Description{
-    max-width: 20rem;
+    max-width: 25rem;
     font-size: 1rem;
     height: 100px;
     letter-spacing: 0px;
     color: #414141;
     opacity: 1;
-    font-family: light;
 }
 
 @media(max-width: 700px) {
   .Texts{
-    margin-left: 60px;
-    margin-top: 150px;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
   .Title{
-    font-size: 2rem;
-    max-width: 18rem;
+    font-size: 1.8rem;
+    max-width: 20rem;
 
   }  
   .Description{
-    font-size: 1.0rem;
-    max-width: 18rem;  
+    font-size: 0.9rem;
+    max-width: 20rem;  
   }  
   .Banner{  
     left: -250px;
   }
 
   .Banner-image{
-    height: 40rem;
+    height: 100vh;
     width: 100%
   }
 }
