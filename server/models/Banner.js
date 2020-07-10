@@ -1,7 +1,7 @@
 const keystone = require("keystone");
 const Types = keystone.Field.Types;
 
-const Banner = new keystone.List("titulo");
+const Banner = new keystone.List("Banner");
 
 Banner.add({
     titulo: { type: Types.Text, required: true, index: true, initial: true },
