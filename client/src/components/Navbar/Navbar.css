@@ -31,6 +31,7 @@
     right: 0.1px;
     width: 100%;
     transition: 0.3s;
+    z-index: 2;
 }
 
 li{
@@ -53,15 +54,15 @@ li a:hover{
 .img{
     margin-top: -5px;
     margin-left: 14vw;
-    width: 12vw;
-    height: 9vh;
+    width: 350px;
+    height: 90px;
     transition: 0.3s;
 }
 
 .imgScrolled{
     margin-left: 14vw;
-    width: 10vw;
-    height: 8vh;
+    width: 260px;
+    height: 80px;
     transition: 0.3s;
 }
 
@@ -97,19 +98,13 @@ li a:hover{
     background-color: rgb(46, 0, 252);
 }
 
-#contato{
-    padding:100px ;
-    margin-top: 1000px;
-    height: 100px;
-    background-color: rgb(197, 0, 164);
-}
-
 html{
     scroll-behavior: smooth;
 }
 
 .botao{
     display: none;
+    z-index: 3;
 }
 
 @media only screen and (max-width: 1200px){
@@ -143,12 +138,12 @@ html{
     .img{
         margin-top: -5px;
         margin-left: 10vw;
-        width: 20vw;
-        height: 8vh;
+        width: 200px;
+        height: 60px;
     }
     
     .imgScrolled{
-        width: 20vw;
+        width: 200px;
         transition: 0.1s;
     }
 }
@@ -169,7 +164,7 @@ html{
         right: 0.1px;
         width: 100%;
         height: 8vh;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 
     li{
@@ -189,22 +184,41 @@ html{
         top: 0;
     }
 
+    .botao .actionBotao{
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        z-index: 2;
+        margin-top: 7px;
+        height: 6vh;
+        width: 9vw;
+    }
+
     .imgBotao{
         margin-top: 2.5vh;
         height: 3.5vh;
-        
     }
     
     .img{
         margin-top: -5px;
         margin-left: 10vw;
-        width: 38vw;
-        height: 8vh;
+        width: 160px;
+        height: 55px;
     }
     
     
     .imgScrolled{
-        width: 38vw;
+        width: 160px;
         transition: 0.1s;
+    }
+
+    .secondBackground{
+        /* display: none; */
+    }
+
+    .secondBackgroundActived{
+        background-color:rgb(0, 0, 0);
+        opacity: 0.3;
+        height: 100vh;
     }
 }
