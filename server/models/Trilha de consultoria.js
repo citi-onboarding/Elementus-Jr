@@ -2,7 +2,6 @@ const keystone = require("keystone");
 const Types = keystone.Field.Types;
 
 const Trilha = new keystone.List("Trilha", {
-    map: {name: "trilha"},  
     nocreate: true,
     nodelete: true 
 });
