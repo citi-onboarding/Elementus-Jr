@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .Banner-image{
-    width: 74rem;
+    height: 90vh;
+    width: 85vw;
   }
 
 .Banner{
@@ -17,7 +18,7 @@
     margin-left: 100px;
     margin-top: 200px;
     position: absolute;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
 }
 
 .Title{
@@ -27,7 +28,7 @@
     letter-spacing: 0px;
     color: #414141;
     opacity: 1;
-    font-family: Poppins medium;
+    font-family: medium;
 }
 
 .Description{
@@ -37,7 +38,7 @@
     letter-spacing: 0px;
     color: #414141;
     opacity: 1;
-    font-family: Poppins light;
+    font-family: light;
 }
 
 @media(max-width: 700px) {
@@ -56,6 +57,11 @@
   }  
   .Banner{  
     left: -250px;
+  }
+
+  .Banner-image{
+    height: 40rem;
+    width: 100%
   }
 }
 
