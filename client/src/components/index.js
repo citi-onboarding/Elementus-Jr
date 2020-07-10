@@ -1,5 +1,7 @@
-import Example from './Example';
+import Button from '.\\Button';
+import Banner from '.\\Banner';
 
 export {
-  Example,
+  Button,
+  Banner,
 };
