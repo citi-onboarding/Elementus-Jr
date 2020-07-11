@@ -42,6 +42,18 @@ function Navbar(){
                 <li><a className="link" href="#servicos">Serviços</a></li>
                 <li><a className="link" href="#inicio">Início</a></li>
             </ul>
+
+            <ul className="lateralNavbar">
+            <a href="#banner">
+                    <img src={logo} alt="Logo Elementus" className="img"/>
+                </a>
+                <li><a className="link" href="#contato">Contato</a></li>
+                <li><a className="link" href="#conteudo">Conteúdo</a></li>
+                <li><a className="link" href="#depoimentos">Depoimentos</a></li>
+                <li><a className="link" href="#servicos">Serviços</a></li>
+                <li><a className="link" href="#inicio">Início</a></li>
+            </ul>
+            
             <div className="botao">
                 <button onClick={lateralNavbar} className="actionBotao"></button>
                 <img className="imgBotao" src={botao} alt=""/>
