@@ -16,53 +16,57 @@ function ServicesCard() {
         loadServices();
     }, []);
 
-    return (
-        /*
-        CARD DAS LATERAIS
-        <div>
-            {services?.map(({ _id, Title, Description, image, Link }) => (
-                <div key={_id} className="Card">
-                    <div>
-                        <div className="image-box">
-                            <div className="blue"></div>
-                            <img src={image[0]?.url} className="card-image" />
-                            <h1 className="title"> {Title}</h1>
-                        </div>
-                    </div>
-                    <div className="Description">
-                        <p>{Description}</p>
-                    </div>
-                </div>
-            ))}
-        </div>
-        */
+    const [centerMode, setCenterMode] = useState(false);
 
-        /* CARD DO MEIO */
-        <div>
-            {services?.map(({ _id, Title, Description, image, Link }) => (
-                <div key={_id} >
-                    <div className="Card-center">
-                        <div>
-                            <div className="image-box-center">
-                                <div className="blue-center"></div>
-                                <img src={image[0]?.url} className="card-image-center" />
 
+    if (centerMode) {
+        return (
+            /* CARD DO MEIO */
+            <div>
+                {services?.map(({ _id, Title, Description, image, Link }) => (
+                    <div key={_id} >
+                        <div className="Card-center">
+                            <div>
+                                <div className="image-box-center">
+                                    <div className="blue-center"></div>
+                                    <img src={image[0]?.url} className="card-image-center" />
+
+                                </div>
+                            </div>
+                            <div className="title-box-center"> <h1> {Title}</h1> </div>
+                            <div className="Description-center">
+                                <p>{Description}</p>
                             </div>
                         </div>
-                        <div className="title-box-center"> <h1> {Title}</h1> </div>
-                        <div className="Description-center">
-                            <p>{Description}</p>
+                        <div className="Button-box-center">
+                            <Button Title="Saiba mais" buttonColor="#FFDC00" buttonSize="180px" buttonTextColor="Black" />
                         </div>
                     </div>
-                    <div className="Button-box-center">
-                        <Button Title="Saiba mais" buttonColor="#FFDC00" buttonSize="180px" buttonTextColor="Black" />
-                    </div>
+                ))}
+            </div>
+        )}
+    else {
+        return (
+                /* CARD DAS LATERAIS */
+                <div>
+                    {services?.map(({ _id, Title, Description, image, Link }) => (
+                        <div key={_id} className="Card">
+                            <div>
+                                <div className="image-box">
+                                    <div className="blue"></div>
+                                    <img src={image[0]?.url} className="card-image" />
+                                    <h1 className="title"> {Title}</h1>
+                                </div>
+                            </div>
+                            <div className="Description">
+                                <p>{Description}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </div>
-
-    );
+            )
+        }
+ 
 }
-
-
 export default ServicesCard;
+
