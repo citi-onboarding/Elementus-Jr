@@ -4,7 +4,7 @@ import axios from 'axios';
 import Button from '..\\Button\\Button'
 
 
-function ServicesCard() {
+function ServicesCard({isCenter}) {
     const [services, setServices] = useState([]);
 
     const loadServices = async () => {
@@ -16,7 +16,12 @@ function ServicesCard() {
         loadServices();
     }, []);
 
-    const [centerMode, setCenterMode] = useState(false);
+    const [centerMode, setCenterMode] = useState([]);
+
+    useEffect(() => {
+        setCenterMode(isCenter);
+    }, [isCenter]);
+
 
 
     if (centerMode) {
@@ -39,7 +44,7 @@ function ServicesCard() {
                             </div>
                         </div>
                         <div className="Button-box-center">
-                            <Button Title="Saiba mais" buttonColor="#FFDC00" buttonSize="180px" buttonTextColor="Black" />
+                            <Button Title="Saiba mais" buttonColor="#FFDC00" buttonSize="120px" buttonTextColor="Black" />
                         </div>
                     </div>
                 ))}
