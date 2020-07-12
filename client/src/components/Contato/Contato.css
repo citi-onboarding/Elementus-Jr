@@ -1,0 +1,218 @@
+.background{
+    display: flex;
+    height: 100vh;
+    justify-content: flex-end;
+}
+
+.background1{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    width: 50vw;
+}
+
+.imgContato{
+    height: 80vh;
+    width: 60vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.background2{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(226, 226, 226);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100vh;
+    width: 50vw;
+}
+
+.cantainerInfo{
+    margin-top: 8vh;
+    height: 20vh;
+    width: 40vw;
+    padding-left:18vw;
+    font-family: "Poppins";
+}
+
+.descricao1{
+    font-size: 1.4rem;
+    color: #414141;
+    padding-left: 1vw;
+}
+
+.descricao2{
+    font-size: 5rem;
+    color: #2e2e2e;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
+.descricao3{
+    padding-left: 1vw;
+    font-size: 1.3rem;
+    color: #707070;
+    width: 25vw;
+}
+
+.caixaInput{
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+}
+
+.inputName{
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    border: solid 2px rgb(226, 226, 226);
+    height: 5vh;
+    font-size: 1.5rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.inputEmail{
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    border: solid 2px rgb(226, 226, 226);
+    height: 5vh;
+    font-size: 1.5rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.inputTelefone{
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    border: solid 2px rgb(226, 226, 226);
+    height: 5vh;
+    font-size: 1.5rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.inputMensagem{
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    border: solid 2px rgb(226, 226, 226);
+    height: 10vh;
+    font-size: 1.5rem;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+textarea{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+}
+
+.buttonEnviar{
+    margin-left: 10vw;
+    margin-top: 5vh;
+    border-radius: 30px;
+    border: none;
+    background-color: #FFDC00;
+    box-shadow: 2px 2px rgb(196, 196, 196);
+    width: 12vw;
+    height: 6vh;
+    font-size: 1.5rem;
+    color: #414141;
+}
+
+
+@media only screen and (max-width: 700px){
+    .background{
+        display: flex;
+        height: 100vh;
+        justify-content: flex-end;
+    }
+
+    .background1{
+        width: 10vw;
+        height: 50vh;
+        padding-top: 56vh;
+        background-color: white;
+    }
+    
+    .imgContato{
+        height: 30vh;
+        width: 50vw;
+    }
+    
+    .background2{
+        height: 80vh;
+        width: 90vw;
+        background-color: rgb(226, 226, 226);
+    }
+    
+    .cantainerInfo{
+        padding: 0;
+        width: 80vw;
+    }
+    
+    .descricao1{
+        margin: 0;
+        padding-left: 10vw;
+        width: 70vw;
+        font-size: 0.9rem;
+    }
+    
+    .descricao2{
+        font-size: 1.8rem;
+        padding-left: 25vw;
+        margin-top: 1vh;
+        color: black;
+    }
+    
+    .descricao3{
+        display: none;
+
+    }
+    
+    .caixaInput{
+        width: 80vw;
+    }
+    
+    .inputName{
+        font-size: 1rem;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    
+    .inputEmail{
+        font-size: 1rem;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    
+    .inputTelefone{
+        font-size: 1rem;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    
+    .inputMensagem{
+        font-size: 1rem;
+        padding-left: 4vw;
+        padding-top: 1vh;
+    }
+
+    .buttonEnviar{
+        margin-left: 40vw;
+        margin-top: 5vh;
+        border-radius: 30px;
+        border: none;
+        background-color: #FFDC00;
+        box-shadow: 2px 2px rgb(196, 196, 196);
+        width: 40vw;
+        height: 6vh;
+        font-size: 1.3rem;
+        color: #414141;
+    }
+
+}
