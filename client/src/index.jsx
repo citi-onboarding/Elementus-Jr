@@ -4,16 +4,16 @@ import Navbar from "./components/Navbar/Navbar"
 
 import {
   Banner,
+  Conteudo,
 } from '.\\components';
 
 function App() {
 
   return(
     <div className="app">
-      <Navbar />
-      <Banner/>
+      <Conteudo/>      
     </div>
-  )
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
