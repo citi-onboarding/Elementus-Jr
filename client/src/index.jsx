@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from "./components/Navbar/Navbar"
 import Contato from "./components/Contato/Contato"
+import Banner from "./components/Banner/Banner"
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return(
     <div className="app">
       <Navbar />
+      <Banner />
       <Contato />
     </div>
   )
