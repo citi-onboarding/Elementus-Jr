@@ -24,9 +24,9 @@ function Conteudo() {
 
 
   return (
-    <div>
+    <section className="section-conteudo">
       <div className="top">
-        <p>Aprenda mais sobre a indústria alimentícia</p>
+        <p>-- Aprenda mais sobre a indústria alimentícia</p>
         <h1 className="Conteudo-title">Conteúdo</h1>
       </div>
       <div className="diagonal">
@@ -48,17 +48,17 @@ function Conteudo() {
                 <h1 className="description">{descricaoConteudo}</h1>
               </div>
               <div className="bottom">
-                <div><p>{autor.first} {autor.last}</p></div>
-                <div><p>02/05/2001</p></div>
+                <div><p className="uppercase">{autor.first} {autor.last}</p></div>
+                <div><p>{`${new Date(data).toLocaleDateString()}`}</p></div>
               </div>
             </div>
           ))}
         </div>
       </div>
       <div className="foot">
-        <p>Caso deseje obter conteúdo no seu e-mail, clique aqui e inscreva-se na nossa newsletter</p>
+        <p className="foot-text">Caso deseje obter conteúdo no seu e-mail, clique aqui e inscreva-se na nossa newsletter</p>
       </div>
-    </div>
+    </section>
 
   );
 }
