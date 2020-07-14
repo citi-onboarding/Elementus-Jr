@@ -181,9 +181,8 @@ html{
     
     
     .imgScrolled{
-        margin-top: 0.3vh;
         width: 130px;
-        height: 40px;
+        height: 45px;
         transition: 0.1s;
     }
 
