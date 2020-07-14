@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import {
   Banner, 
   Contato,
-  Navbar
+  Navbar,
+  Trilha,
 } from '.\\components';
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
     <div className="app">
       <Navbar />
       <Banner />
+      <Trilha />
       <Contato />
+
     </div>
   )
 }
