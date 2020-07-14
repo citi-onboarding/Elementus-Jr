@@ -11,7 +11,7 @@
   width: 80%;
 }
 
-.container {
+.container-banner {
   width: 20%;
   height: 100%;
 }
@@ -23,7 +23,7 @@
   position: relative;
 }
 
-.Texts{
+.Texts-banner{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -32,7 +32,7 @@
     margin-left: 5vw;
 }
 
-.Title{
+.Title-banner{
     max-width: 35rem;
     font-size: 3.0rem;
     max-height: 60px;
@@ -42,11 +42,12 @@
     font-weight: 500;
 }
 
-.Description{
+.Description-banner{
     max-width: 25rem;
     font-size: 1rem;
     height: 100px;
     letter-spacing: 0px;
+    line-height: 25px;
     color: #414141;
     opacity: 1;
 }
