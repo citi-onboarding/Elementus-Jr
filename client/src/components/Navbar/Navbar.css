@@ -15,6 +15,7 @@
     right: 0.1px;
     width: 100%;
     transition: 0.3s;
+    z-index: 100;
 }
 
 .navbarScrolled{
@@ -43,7 +44,7 @@ li{
     padding: 30px 16px;
     color:#9e9e9e;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -53,48 +54,16 @@ li a:hover{
 
 .img{
     margin-left: 14vw;
-    width: 350px;
-    height: 90px;
+    width: 200px;
+    height: 60px;
     transition: 0.3s;
 }
 
 .imgScrolled{
     margin-left: 14vw;
-    width: 260px;
-    height: 80px;
+    width: 190px;
+    height: 57px;
     transition: 0.3s;
-}
-
-#banner{
-    height: 1px;
-}
-
-#inicio{
-    padding:100px ;
-    margin-top: 1000px;
-    height: 100px;
-    background-color: rgb(105, 105, 105);
-}
-
-#servicos{
-    padding:100px ;
-    margin-top: 1000px;
-    height: 100px;
-    background-color: rgb(255, 0, 0);
-}
-
-#depoimentos{
-    padding:100px ;
-    margin-top: 1000px;
-    height: 100px;
-    background-color: rgb(8, 238, 0);
-}
-
-#conteudo{
-    padding:100px ;
-    margin-top: 1000px;
-    height: 100px;
-    background-color: rgb(46, 0, 252);
 }
 
 html{
