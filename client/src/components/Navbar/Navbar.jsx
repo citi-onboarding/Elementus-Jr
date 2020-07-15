@@ -48,6 +48,9 @@ function Navbar(){
             </div>
 
             <div id="secondBackground"></div>
+        
+            <div id="banner">
+            </div>
         </div>
     );
 };
