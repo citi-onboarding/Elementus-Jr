@@ -50,7 +50,7 @@ function Conteudo() {
                 </div>
                 <div className="bottom">
                   <div><p className="uppercase">{autor.first} {autor.last}</p></div>
-                  <div><p>{`${new Date(data).toLocaleDateString()}`}</p></div>
+                  <div><p className="dataBottom">{`${new Date(data).toLocaleDateString()}`}</p></div>
                 </div>
               </div>
             </div>
