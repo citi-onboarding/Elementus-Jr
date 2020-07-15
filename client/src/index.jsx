@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
+  Conteudo,
   Banner, 
   Contato,
   Navbar,
@@ -12,13 +13,12 @@ function App() {
   return(
     <div className="app">
       <Navbar />
-      <Trilha />
       <Banner />
+      <Conteudo/>
       <Trilha />
       <Contato />
-
     </div>
-  )
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
