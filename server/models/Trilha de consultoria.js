@@ -7,7 +7,8 @@ const Trilha = new keystone.List("Trilha", {
 });
 
 Trilha.add({
-    imagem: { type: Types.CloudinaryImage, required: true, index: true, initial: true },
+    imagem1: { type: Types.CloudinaryImage, required: true, index: true, initial: true },
+    imagem2: { type: Types.CloudinaryImage, required: true, index: true, initial: true }
 });
 
 Trilha.register();
