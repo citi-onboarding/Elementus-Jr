@@ -19,7 +19,7 @@ function Banner() {
   }, []);
 
   return (
-    <div>
+    <div id="inicio">
       {Banner?.map(({ _id, titulo, descricao, imagem}) => (
         <div className="main-content" key={_id}>
           <div className="container-banner">

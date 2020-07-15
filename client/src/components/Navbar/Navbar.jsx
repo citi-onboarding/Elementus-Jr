@@ -48,25 +48,6 @@ function Navbar(){
             </div>
 
             <div id="secondBackground"></div>
-
-            <div id="banner">
-            </div>
-
-            <div id="inicio">
-                <h1>Inicio</h1>
-            </div>
-
-            <div id="servicos">
-                <h1>Servicos</h1>
-            </div>
-
-            <div id="depoimentos">
-                <h1>Depoimentos</h1>
-            </div>
-
-            <div id="conteudo">
-                <h1>Conteudo</h1>
-            </div>
         </div>
     );
 };

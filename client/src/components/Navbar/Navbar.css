@@ -67,38 +67,6 @@ li a:hover{
     transition: 0.3s;
 }
 
-#banner{
-    height: 1px;
-}
-
-#inicio{
-    padding:100px ;
-    margin-top: 1000px;
-    height: 100px;
-    background-color: rgb(105, 105, 105);
-}
-
-#servicos{
-    padding:100px ;
-    margin-top: 1000px;
-    height: 100px;
-    background-color: rgb(255, 0, 0);
-}
-
-#depoimentos{
-    padding:100px ;
-    margin-top: 1000px;
-    height: 100px;
-    background-color: rgb(8, 238, 0);
-}
-
-#conteudo{
-    padding:100px ;
-    margin-top: 1000px;
-    height: 100px;
-    background-color: rgb(46, 0, 252);
-}
-
 html{
     scroll-behavior: smooth;
 }

@@ -14,6 +14,7 @@ function App() {
     <div className="app">
       <Navbar/>
       <Banner/>
+      <Contato />
     </div>
   )
 }
