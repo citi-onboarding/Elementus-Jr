@@ -40,5 +40,7 @@
 }
 
 .estiloMobile{
+    height: 80vh;
     width: 50vw;
+    padding-left: 25vw;
 }

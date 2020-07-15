@@ -27,9 +27,9 @@ function Trilha(){
       }, []);
 
     return(
-        <div className>
+        <div >
             {!windowWidth ? (
-                <div>
+                <div >
                     <p className="titulo-descricao">
                         <p className="desc">
                             - Conheça nosso processo de consultoria
