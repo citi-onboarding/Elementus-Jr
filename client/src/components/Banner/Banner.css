@@ -30,6 +30,15 @@
     font-family: 'Poppins', sans-serif;
     position: absolute;
     margin-left: 5vw;
+    max-width: 500px;
+}
+
+.title-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .Title-banner{
@@ -39,7 +48,13 @@
     letter-spacing: 0px;
     color: #414141;
     opacity: 1;
-    font-weight: 500;
+    background: #FFDC00;
+    display: inline;
+    position: relative;
+    color:black;
+    font-weight: 600;
+    margin: 5px 0;
+    padding-right: 12px;
 }
 
 .Description-banner{
@@ -57,18 +72,14 @@
     width: 0;
   }
 
-  .Texts{
-    margin-left: 0px;
-    margin-top: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+  .Texts-banner {
+    max-width: 80%;
   }
+
   .Title-banner{
     font-size: 1.8rem;
     max-width: 20rem;
+    padding-right: 8px;
 
   }  
   .Description-banner{

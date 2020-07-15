@@ -25,7 +25,11 @@ function Banner() {
           <div className="container-banner">
           </div>
           <div className="Texts-banner">
-            <p className="Title-banner">{titulo}</p>
+            <div className="title-content">
+              {titulo.split(' ').map((text) => (
+                <p className="Title-banner">{text} </p>
+              ))}
+            </div>
             <p className="Description-banner">{descricao}</p>
             <Button Title="Contate-nos" buttonColor="#00005A" buttonSize= "180px" buttonTextColor="white"/>
           </div>
