@@ -169,7 +169,7 @@ html{
 
     .imgBotao{
         margin-top: 2.5vh;
-        height: 3.5vh;
+        height: 3vh;
     }
     
     .img{
@@ -255,4 +255,14 @@ html{
         font-size: 1.4rem;
         font-family: 'Poppins', sans-serif;
     }
+<<<<<<< HEAD
+=======
+
+    .buttonSidebar{
+        background-color: transparent;
+        border: none;
+        width: 50vw;
+    }
+
+>>>>>>> 27d83e7... Hotfix( Mudanca na img do botaoX / Reducao do tamanho do botao e botaoX / Fechamento automatico no click dos elementos da sidebar  )
 }

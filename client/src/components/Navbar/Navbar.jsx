@@ -28,6 +28,17 @@ function Navbar(){
         }
     }
 
+    
+    function closeSidebar(){
+        const secondBackground = document.getElementById("secondBackground");
+        const lateralNavbar = document.getElementById("lateralNavbarId");
+        secondBackground.classList.remove("secondBackgroundActived");
+        secondBackground.classList.add("secondBackground");
+        lateralNavbar.classList.remove("lateralNavbarActived");
+        lateralNavbar.classList.add("lateralNavbar");
+        setImgButton(botao);
+    };
+
 
     if(secondBackground != null){
         let lateralNavbar = document.getElementById("lateralNavbarId");
@@ -44,6 +55,8 @@ function Navbar(){
     function lateralNavbar() {
         const secondBackground = document.getElementById("secondBackground");
         const lateralNavbar = document.getElementById("lateralNavbarId");
+
+
 
         if(!(secondBackground.classList.contains("secondBackgroundActived"))){
             secondBackground.classList.remove("secondBackground");
@@ -81,11 +94,12 @@ function Navbar(){
             </ul>
             
             <ul id="lateralNavbarId" className="lateralNavbar">
-                <li><a className="linkLateral" href="#inicio">Início</a></li>
-                <li><a className="linkLateral" href="#servicos">Serviços</a></li>
-                <li><a className="linkLateral" href="#depoimentos">Depoimentos</a></li>
-                <li><a className="linkLateral" href="#conteudo">Conteúdo</a></li>
-                <li><a className="linkLateral" href="#contato">Contato</a></li>
+                
+                <li><button className="buttonSidebar" onClick={closeSidebar}><a className="linkLateral" href="#inicio">Início</a></button></li>
+                <li><button className="buttonSidebar" onClick={closeSidebar}><a className="linkLateral" href="#servicos">Serviços</a></button></li>
+                <li><button className="buttonSidebar" onClick={closeSidebar}><a className="linkLateral" href="#depoimentos">Depoimentos</a></button></li>
+                <li><button className="buttonSidebar" onClick={closeSidebar}><a className="linkLateral" href="#conteudo">Conteúdo</a></button></li>
+                <li><button className="buttonSidebar" onClick={closeSidebar}><a className="linkLateral" href="#contato">Contato</a></button></li>
             </ul>
 
             <div className="botao">
