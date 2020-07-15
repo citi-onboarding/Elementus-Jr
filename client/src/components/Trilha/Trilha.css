@@ -1,0 +1,46 @@
+.estiloWeb{
+    width: 100vw;
+}
+
+.titulo-descricao{
+    background-color: #ecebeb;
+    margin: 0;
+}
+
+.desc{
+    padding-top: 5vh;
+    padding-left: 10vw;
+    margin: 0;
+    color: #414141;
+    font-size: 1rem;
+}
+
+.titulo{
+    padding-top: 2vh;
+    padding-left: 10vw;
+    margin: 0;
+    color: #414141;
+    font-size: 3rem;
+}
+
+.desc-mobile{
+    padding-top: 5vh;
+    padding-left: 12vw;
+    margin: 0;
+    color: #414141;
+    font-size: 1rem;
+}
+
+.titulo-mobile{
+    padding-top: 2vh;
+    padding-left: 12vw;
+    margin: 0;
+    color: #414141;
+    font-size: 2rem;
+}
+
+.estiloMobile{
+    height: 80vh;
+    width: 50vw;
+    padding-left: 25vw;
+}
