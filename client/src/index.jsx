@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from "./components/Navbar/Navbar"
-import Contato from "./components/Contato/Contato"
-import Banner from "./components/Banner/Banner"
-
 import {
   Banner, 
-  ServicesCard,
+  Contato,
+  Navbar
 } from '.\\components';
 
 function App() {
