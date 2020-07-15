@@ -1,0 +1,59 @@
+
+element.style {
+    display: flex;
+
+}
+
+.Services{
+    width: 80vw;
+    padding: 10vw;
+       
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    width: 53.5%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+
+.slick-dots li{
+    content: none;
+    height: 10px;
+    width: 10px;
+    background-color: #414141;
+    opacity: 0.15;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px #00222D33;
+}
+
+.Slider .slick-dots .slick-active{
+    background-color: #414141;
+    opacity: 0.35;
+    box-shadow: none;
+}
+
+.slick-dots li button:before{
+    content: none;
+}
+
+.center .slick-center{
+    transform: scale(1.2)
+}
+
+.slick-next:before{
+    color: black;
+}
+.slick-prev:before{
+    color: black;   
+}
+
+
+
+
+
+
+

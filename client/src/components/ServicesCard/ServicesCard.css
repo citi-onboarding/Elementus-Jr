@@ -155,3 +155,12 @@
     color: #414141;
     opacity: 1;
 }
+
+.container-services-card{
+    display: flex;
+    flex-direction: row;
+    width: 100% ;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto; 
+}

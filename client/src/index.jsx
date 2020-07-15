@@ -12,11 +12,9 @@ import {
 function App() {
 
   return(
-    <div className="app">
-      <Navbar>
-      </Navbar>
+    <section className="app">
      <Services/>
-    </div>
+    </section>
   )
 }
 
