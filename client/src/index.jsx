@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Navbar from "./components/Navbar/Navbar"
 import Contato from "./components/Contato/Contato"
 import Trilha from "./components/Trilha/Trilha"
+import Banner from "./components/Banner/Banner"
 
 import {
   Banner, 
@@ -13,9 +14,9 @@ function App() {
 
   return(
     <div className="app">
-      <ServicesCard isCenter={false} > </ServicesCard>
       <Navbar />
       <Trilha />
+      <Banner />
       <Contato />
 
     </div>
