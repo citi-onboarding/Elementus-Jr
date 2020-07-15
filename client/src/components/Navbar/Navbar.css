@@ -15,6 +15,7 @@
     right: 0.1px;
     width: 100%;
     transition: 0.3s;
+    z-index: 100;
 }
 
 .navbarScrolled{
@@ -43,7 +44,7 @@ li{
     padding: 30px 16px;
     color:#9e9e9e;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -52,17 +53,17 @@ li a:hover{
   }
 
 .img{
-    margin-top: -5px;
+    margin-top: 5px;
     margin-left: 14vw;
-    width: 350px;
-    height: 90px;
+    width: 200px;
+    height: 60px;
     transition: 0.3s;
 }
 
 .imgScrolled{
     margin-left: 14vw;
-    width: 260px;
-    height: 80px;
+    width: 190px;
+    height: 57px;
     transition: 0.3s;
 }
 

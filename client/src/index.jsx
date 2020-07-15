@@ -12,9 +12,8 @@ function App() {
 
   return(
     <div className="app">
-      <ServicesCard isCenter={false} > </ServicesCard>
-      <Navbar />
-      <Contato />
+      <Navbar/>
+      <Banner/>
     </div>
   )
 }
