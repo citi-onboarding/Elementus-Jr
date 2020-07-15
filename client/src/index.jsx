@@ -12,6 +12,7 @@ function App() {
   return(
     <div className="app">
       <Navbar />
+      <Trilha />
       <Banner />
       <Trilha />
       <Contato />
