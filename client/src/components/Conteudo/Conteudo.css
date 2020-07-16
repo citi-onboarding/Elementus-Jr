@@ -172,7 +172,7 @@
     bottom: 25px; 
     overflow: hidden;
     width: 35vw;
-    height: 30vh;
+    height: 40vh;
   }
   
   .card-image{
@@ -225,7 +225,6 @@
     flex-wrap: wrap;
     margin: 0 auto; 
     transform: none;
-    margin-left: 10vw;
   }
   
   .btn{

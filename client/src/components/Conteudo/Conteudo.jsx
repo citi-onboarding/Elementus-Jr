@@ -33,7 +33,7 @@ function Conteudo() {
         <div className="container">
           {Conteudo?.map(({ _id, linkRedirecionamento, descricaoConteudo, autor, imagem, tipoConteudo, data }) => (
             <div key={_id} className="Card">
-              <div>
+              <div className="image-box">
                 <div className="image-box">
                   {tipoConteudo === "Artigo" ? (<div className="blue"> </div>) : (<div className="yellow"> </div>)}
                   <img src={imagem.url} className="card-image" />
