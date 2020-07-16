@@ -40,14 +40,14 @@ function Trilha(){
                 </div>
             ) : (
                 <div>
-                    <p className="titulo-descricao">
+                    <div className="titulo-descricao">
                         <p className="desc-mobile">
                             - Conheça nosso processo de consultoria
                         </p>
                         <h1 className="titulo-mobile">
                             Trilha da consultoria
                         </h1>
-                    </p>
+                    </div>
                     <img className="estiloMobile" src={img_2} alt=""/>
                 </div>
                 

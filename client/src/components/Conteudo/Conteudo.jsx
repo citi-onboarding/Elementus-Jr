@@ -23,7 +23,7 @@ function Conteudo() {
 
 
   return (
-    <section className="section-conteudo">
+    <section id="conteudo" className="section-conteudo">
       <div className="background-estilo"></div>
       <div className="top">
         <p className="descricao-titulo">- Aprenda mais sobre a indústria alimentícia</p>
