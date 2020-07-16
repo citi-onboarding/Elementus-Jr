@@ -6,15 +6,16 @@ import Contato from "./components/Contato/Contato"
 import {
   Banner, 
   ServicesCard,
+  Footer
 } from '.\\components';
 
 function App() {
 
   return(
     <div className="app">
-      <ServicesCard isCenter={false} > </ServicesCard>
       <Navbar />
       <Contato />
+      <Footer></Footer>
     </div>
   )
 }
