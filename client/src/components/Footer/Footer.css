@@ -1,6 +1,5 @@
 .footer{
     background:#414141;
-    
     width: 100%;
     opacity: 0.5;
     color: white;
@@ -8,6 +7,11 @@
     justify-content: space-around;
     align-items: center;
     
+}
+
+.footer-text{
+    display: flex;  
+    align-items: center;
 }
     
 
@@ -21,19 +25,30 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center ;
+    align-items: flex-end ;
+    margin-bottom: 50px;
     height: 150px;
     
 }
 
-.adress{
+
+
+
+.address{
     max-width: 230px;
+    color: #707070;
 }
 
+.footer-titles{
+    color:#414141; 
+    font-weight: 600; 
+    font-size: 16px;
+
+}
 
 .img-social-media{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .social-media{
@@ -41,14 +56,26 @@
     justify-content: space-evenly;
 }
 
-.social-media-margin{
-    display: flex;
-    justify-content: space-evenly;
-}
 
 .row{
     display: flex ;
     align-items: center;
+    color: #707070;
+}
+
+
+.margin-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+#citi-icon{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -71,7 +98,7 @@
         order: -1;
         justify-self: flex-end;
         margin-left: 55vw;
-        margin-top: -25vw;
+        margin-top: -18vh;
         
     }
 

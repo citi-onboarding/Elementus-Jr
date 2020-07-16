@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import '.\\Footer.css';
 import axios from 'axios';
-import instagram_logo from ".\\img\\Instagram-logo.png"
-import facebook_logo from ".\\img\\Facebook-logo.png"
-import linkedin_logo from ".\\img\\Linkedin-logo.png"
-import phone_icon from ".\\img\\phone-icon.png"
-import email_icon from ".\\img\\email-icon.png"
+import instagram_logo from ".\\img\\Instagram-logo.svg"
+import facebook_logo from ".\\img\\Facebook-logo.svg"
+import linkedin_logo from ".\\img\\Linkedin-logo.svg"
+import phone_icon from ".\\img\\phone-icon.svg"
+import email_icon from ".\\img\\email-icon.svg"
+import heart_icon from ".\\img\\heart.svg"
+import code_icon from ".\\img\\code.svg"
+import citi_icon from ".\\img\\citi.svg"
 
 function Footer() {
   const [Footer, setFooter] = useState([]);
@@ -24,12 +27,12 @@ function Footer() {
       {Footer?.map(({ _id, linkFacebook, linkLinkedin, linkInstagram, endereco, telefone, linkNewsletter }) => (
         <div className="container" key={_id}>
           <div className="white">
-            <div className="adress">
-              <h3>Endereço</h3>
+            <div className="address">
+              <p className="footer-titles">Endereço</p>
               <p>{endereco}</p>
             </div>
             <div className="up">
-              <h3>Redes sociais</h3>
+              <p className="footer-titles">Redes sociais</p>
               <div className="social-media">
               <img src={facebook_logo} className="img-social-media" />
               <img src={instagram_logo} className="img-social-media" />
@@ -38,18 +41,21 @@ function Footer() {
             </div>
             <div>
               <div className="row">
-                <img src={phone_icon} className="img-social-media" />
+                <img src={phone_icon} className="margin-icon" />
                 <div className="distance"><p>{telefone}</p></div>
               </div>
               <div className="row">
-               <img src={email_icon} className="img-social-media" />
+               <img src={email_icon} className="margin-icon" />
                 <p>{linkNewsletter}</p>
               </div>  
             </div>
           </div>
           <footer className="footer">
             <p> © 2020 | Elementus Júnior Consultoria </p>
-            <h3 className="footer-text"> Made with {"</>"} and {"<"}3 CITi </h3>
+            <p className="footer-text"> Made with  
+            <img src={code_icon} className="margin-icon" /> and
+            <img src={heart_icon} className="margin-icon" /> by
+            <img src={citi_icon} id="citi-icon" /> </p>
           </footer>
         </div>
       ))}
