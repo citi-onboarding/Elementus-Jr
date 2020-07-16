@@ -159,8 +159,5 @@
 .container-services-card{
     display: flex;
     flex-direction: row;
-    width: 100% ;
-    justify-content: space-around;
     align-items: center;
-    margin: 0 auto; 
-}
+    justify-content: center;}

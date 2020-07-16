@@ -6,28 +6,26 @@ import Button from '..\\Button\\Button'
 
 function ServicesCard({ isCenter, _id, Title, Description, image, Link }) {
 
-    const [centerMode, setCenterMode] = useState([]);
+    const [centerMode, setCenterMode] = useState(false);
 
     useEffect(() => {
         setCenterMode(isCenter);
     }, [isCenter]);
 
-
-
-    if (centerMode) {
+    
+    if (centerMode) { 
         return (
             /* CARD DO MEIO */
             <div>
-                <div key={_id} >
+                <div key={_id}>
                     <div className="Card-center">
                         <div>
                             <div className="image-box-center">
                                 <div className="blue-center"></div>
-                                <img src={image?.url} className="card-image-center" />
-
+                                <img src={image?.url} className="card-image-center"/>
                             </div>
                         </div>
-                        <div className="title-box-center"> <h1> {Title}</h1> </div>
+                        <div className="title-box-center"> <h1>{Title}</h1> </div>
                         <div className="Description-center">
                             <p>{Description}</p>
                         </div>
@@ -36,7 +34,7 @@ function ServicesCard({ isCenter, _id, Title, Description, image, Link }) {
                         <Button Title="Saiba mais" buttonColor="#FFDC00" buttonSize="120px" buttonTextColor="Black" />
                     </div>
                 </div>
-                )
+                
             </div>
         )
     }
@@ -50,7 +48,7 @@ function ServicesCard({ isCenter, _id, Title, Description, image, Link }) {
                             <div className="image-box">
                                 <div className="blue"></div>
                                 <img src={image?.url} className="card-image" />
-                                <h1 className="title"> {Title}</h1>
+                                <h1 className="title">{Title}</h1>
                             </div>
                         </div>
                         <div className="Description">
