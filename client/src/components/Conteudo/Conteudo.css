@@ -221,7 +221,7 @@
   
   .container{
     display: flex;
-    width: 100% ;
+    width: 90vw ;
     flex-wrap: wrap;
     margin: 0 auto; 
     transform: none;

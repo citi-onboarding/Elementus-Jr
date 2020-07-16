@@ -211,7 +211,8 @@ html{
         list-style-type: none;
         height: 100vh;
         width: 50vw;
-        display: flex;
+        /* display: flex; */
+        display: none;
         flex-direction: column;
         background-color: rgb(255, 255, 255);
         margin-top: 0;
@@ -255,14 +256,10 @@ html{
         font-size: 1.4rem;
         font-family: 'Poppins', sans-serif;
     }
-<<<<<<< HEAD
-=======
 
     .buttonSidebar{
         background-color: transparent;
         border: none;
         width: 50vw;
     }
-
->>>>>>> 27d83e7... Hotfix( Mudanca na img do botaoX / Reducao do tamanho do botao e botaoX / Fechamento automatico no click dos elementos da sidebar  )
 }
