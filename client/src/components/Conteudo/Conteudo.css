@@ -115,6 +115,10 @@
   font-weight: 600;
 }
 
+.descricao-titulo{
+  font-size: 1.2rem;
+}
+
 .foot{
   display: flex;
   width: 100%;
