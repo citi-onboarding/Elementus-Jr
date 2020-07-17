@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import {
   Conteudo,
   Banner, 
-  ServicesCard,
-  Footer
-  Services
+  Footer,
+  Services,
   Contato,
   Navbar,
   Trilha,
@@ -17,6 +16,7 @@ function App() {
     <div className="app">
       <Navbar />
       <Banner />
+      <Services />
       <Conteudo/>
       <Trilha />
       <Contato />

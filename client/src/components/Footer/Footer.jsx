@@ -25,7 +25,7 @@ function Footer() {
   return (
     <div>
       {Footer?.map(({ _id, linkFacebook, linkLinkedin, linkInstagram, endereco, telefone, linkNewsletter }) => (
-        <div className="container" key={_id}>
+        <div className="container-footer" key={_id}>
           <div className="white">
             <div className="address">
               <p className="footer-titles">Endereço</p>
@@ -40,11 +40,11 @@ function Footer() {
               </div>
             </div>
             <div>
-              <div className="row">
+              <div className="row-footer">
                 <img src={phone_icon} className="margin-icon" />
                 <div className="distance"><p>{telefone}</p></div>
               </div>
-              <div className="row">
+              <div className="row-footer">
                <img src={email_icon} className="margin-icon" />
                 <p>{linkNewsletter}</p>
               </div>  
