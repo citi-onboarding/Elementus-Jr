@@ -4,6 +4,7 @@ import {
   Conteudo,
   Banner, 
   ServicesCard,
+  Footer
   Services
   Contato,
   Navbar,
@@ -19,6 +20,7 @@ function App() {
       <Conteudo/>
       <Trilha />
       <Contato />
+      <Footer></Footer>
     </div>
   );
 }

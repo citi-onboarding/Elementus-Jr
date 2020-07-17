@@ -6,6 +6,7 @@ import Services from '.\\Services';
 import Contato from '.\\Contato';
 import Navbar from '.\\Navbar';
 import Trilha from '.\\Trilha';
+import Footer from '.\\Footer';
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   Contato,
   Navbar,
   Trilha,
+  Footer,
 };
