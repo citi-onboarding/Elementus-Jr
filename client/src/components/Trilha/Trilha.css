@@ -1,9 +1,5 @@
-.estiloWeb{
-    width: 100vw;
-}
-
 .titulo-descricao{
-    background-color: #ecebeb;
+    background-color: #ffffff;
     margin: 0;
 }
 
@@ -37,10 +33,18 @@
     margin: 0;
     color: #414141;
     font-size: 2rem;
+    
 }
 
 .estiloMobile{
     height: 80vh;
-    width: 50vw;
-    padding-left: 25vw;
+    width: 100%;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+
+.estiloWeb{
+    width: 100%;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
 }

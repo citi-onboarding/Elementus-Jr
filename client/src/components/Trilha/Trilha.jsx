@@ -13,8 +13,6 @@ function Trilha(){
         setImg_2(res.data[0].imagem2.url);
     };
 
-    console.log(window.innerWidth)
-
     useEffect(() =>{
         loadTrilha();
     }, []);
@@ -30,26 +28,26 @@ function Trilha(){
         <div >
             {!windowWidth ? (
                 <div >
-                    <p className="titulo-descricao">
+                    <div className="titulo-descricao">
                         <p className="desc">
                             - Conheça nosso processo de consultoria
                         </p>
                         <h1 className="titulo">
                             Trilha da consultoria
                         </h1>
-                    </p>
+                    </div>
                     <img className="estiloWeb" src={img_1} alt=""/>
                 </div>
             ) : (
                 <div>
-                    <p className="titulo-descricao">
+                    <div className="titulo-descricao">
                         <p className="desc-mobile">
                             - Conheça nosso processo de consultoria
                         </p>
                         <h1 className="titulo-mobile">
                             Trilha da consultoria
                         </h1>
-                    </p>
+                    </div>
                     <img className="estiloMobile" src={img_2} alt=""/>
                 </div>
                 
