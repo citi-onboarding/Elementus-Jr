@@ -15,7 +15,7 @@
 }
     
 
-.container{
+.container-footer{
     display: flex;
     flex-direction: column;
     width: 100%;    
@@ -30,8 +30,6 @@
     height: 150px;
     
 }
-
-
 
 
 .address{
@@ -57,7 +55,7 @@
 }
 
 
-.row{
+.row-footer{
     display: flex ;
     align-items: center;
     color: #707070;

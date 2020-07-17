@@ -6,6 +6,9 @@ import {
   ServicesCard
 } from '..\\..\\components';
 
+
+
+
 function Services() {
   const [centerTitle, setCenterTitle] = useState("");
 
@@ -66,7 +69,9 @@ function Services() {
           ))}
         </Slider>
       </div>
+      <div className="blank-space"> </div>
     </main>
+    
   );
 }
 
