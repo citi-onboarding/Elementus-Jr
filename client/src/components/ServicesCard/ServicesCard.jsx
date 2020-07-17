@@ -19,7 +19,7 @@ function ServicesCard({ isCenter, _id, Title, Description, image, Link }) {
             <section className="Services-card">
                 <div className="container-services-card">
                     <div key={_id}>
-                        <div className="Card-center">
+                        <div className="Card-shape-center">
                             <div>
                                 <div className="image-box-center">
                                     <div className="blue-center"></div>
@@ -42,17 +42,18 @@ function ServicesCard({ isCenter, _id, Title, Description, image, Link }) {
     else {
         return (
             /* CARD DAS LATERAIS */
+            // sc = services card
             <section>
                 <div className="container-services-card">
-                    <div key={_id} className="Card">
+                    <div key={_id} className="Card-shape-sc">
                         <div>
-                            <div className="image-box">
-                                <div className="blue"></div>
-                                <img src={image?.url} className="card-image" />
-                                <p className="title">{Title}</p>
+                            <div className="image-box-sc">
+                                <div className="blue-sc"></div>
+                                <img src={image?.url} className="card-image-sc" />
+                                <p className="title-sc">{Title}</p>
                             </div>
                         </div>
-                        <div className="Description">
+                        <div className="Description-sc">
                             <p>{Description}</p>
                         </div>
                     </div>

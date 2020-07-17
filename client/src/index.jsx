@@ -17,8 +17,8 @@ function App() {
       <Navbar />
       <Banner />
       <Services />
-      <Conteudo/>
       <Trilha />
+      <Conteudo/>
       <Contato />
       <Footer></Footer>
     </div>

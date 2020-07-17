@@ -1,5 +1,5 @@
 
-.Card{
+.Card-shape-sc{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 8px #00000029;
     border: 2px solid #DFDFDF;
@@ -15,7 +15,7 @@
     
 }
 
-.image-box{  
+.image-box-sc{  
     position: relative;
     bottom: 25px; 
     overflow: hidden;
@@ -24,7 +24,7 @@
 }
 
 
-.card-image{
+.card-image-sc{
     width: 100%;
     height: 86%;
     z-index: 0;
@@ -32,7 +32,7 @@
     
 }
 
-.Description{
+.Description-sc{
     position: relative;
     text-align: left;
     max-width: 156px;
@@ -42,7 +42,7 @@
     opacity: 1;
 }
 
-.title{
+.title-sc{
     z-index: 11;
     width: 150px;
     position: absolute;
@@ -55,7 +55,7 @@
 }
     
 
-.blue{
+.blue-sc{
     background: linear-gradient(#00005A4A,#00005A);
     width: 195px;
     height: 193px;
@@ -64,18 +64,11 @@
     opacity: 0.50;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
 
 /*             Card do meio               */
 
 
-.Card-center{
+.Card-shape-center{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 8px #00000029;
     border: 2px solid #DFDFDF;
@@ -89,9 +82,10 @@
     height: 270px;
     overflow: hidden;
     
+    
 }
 .Services-card{
-    height: 300px ;
+    height: 310px ;
 }
 
 .image-box-center{  
@@ -157,7 +151,7 @@
     max-width: 161px;
     max-height: 0px;
     font-size: 8px;
-    left: 12px;
+    left: 18px;
     bottom: 15px;
     color: #414141;
     opacity: 1;
@@ -167,4 +161,5 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+}
