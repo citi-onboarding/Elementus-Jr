@@ -1,21 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from "./components/Navbar/Navbar"
-import Contato from "./components/Contato/Contato"
-
 import {
+  Conteudo,
   Banner, 
   ServicesCard,
   Services
+  Contato,
+  Navbar,
+  Trilha,
 } from '.\\components';
 
 function App() {
 
   return(
-    <section className="app">
-     <Services/>
-    </section>
-  )
+    <div className="app">
+      <Navbar />
+      <Banner />
+      <Conteudo/>
+      <Trilha />
+      <Contato />
+    </div>
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));

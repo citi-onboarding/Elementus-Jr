@@ -1,0 +1,50 @@
+.titulo-descricao{
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.desc{
+    padding-top: 5vh;
+    padding-left: 10vw;
+    margin: 0;
+    color: #414141;
+    font-size: 1rem;
+}
+
+.titulo{
+    padding-top: 2vh;
+    padding-left: 10vw;
+    margin: 0;
+    color: #414141;
+    font-size: 3rem;
+}
+
+.desc-mobile{
+    padding-top: 5vh;
+    padding-left: 12vw;
+    margin: 0;
+    color: #414141;
+    font-size: 1rem;
+}
+
+.titulo-mobile{
+    padding-top: 2vh;
+    padding-left: 12vw;
+    margin: 0;
+    color: #414141;
+    font-size: 2rem;
+    
+}
+
+.estiloMobile{
+    height: 80vh;
+    width: 100%;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+
+.estiloWeb{
+    width: 100%;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}

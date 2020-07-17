@@ -2,7 +2,10 @@ const keystone = require("keystone");
 const { CloudinaryImage } = require("keystone/lib/fieldTypes");
 const Types = keystone.Field.Types;
 
-const Conteudo = new keystone.List("Conteudo")
+const Conteudo = new keystone.List("Conteudo", {
+    nocreate: true,
+    nodelete: true 
+});
 
 Conteudo.add({
     linkRedirecionamento: { type: Types.Url, required: true, index: true, initial: true },
