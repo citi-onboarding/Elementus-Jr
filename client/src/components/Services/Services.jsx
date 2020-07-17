@@ -54,6 +54,9 @@ function Services() {
 
   return (
     <main className="Services">
+      <div className="Grey-box-sc">
+        <p></p>
+      </div>
       <div className="Services-card">
         <div className="services-top">
           <p id="Services-description">- Entenda o que fazemos e onde atuamos</p>

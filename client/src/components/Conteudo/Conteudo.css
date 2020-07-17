@@ -132,8 +132,6 @@
   
 }
 
-
-
 @media only screen and (max-width: 700px){
   .section-conteudo{
     padding: 0;
@@ -164,7 +162,6 @@
     margin-bottom: 3vh;
     overflow: hidden;
     transform: none;
-    
   }
   
   .image-box{  

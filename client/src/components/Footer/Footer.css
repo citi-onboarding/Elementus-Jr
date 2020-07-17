@@ -89,13 +89,14 @@
         justify-content: space-around;
         align-items: flex-start ;
         height: 200px;
-        margin-left: 60px;
+        padding-left: 10vw;
+        box-sizing: border-box;
         
     }
     .up{
         order: -1;
         justify-self: flex-end;
-        margin-left: 55vw;
+        margin-left: 50vw;
         margin-top: -18vh;
         
     }
