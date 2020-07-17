@@ -16,7 +16,7 @@
     padding-left: 10vw;
     margin: 0;
     color: #414141;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .desc-mobile{
@@ -39,12 +39,12 @@
 .estiloMobile{
     height: 80vh;
     width: 100%;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding: 8vh 10vw;
+    box-sizing: border-box;
 }
 
 .estiloWeb{
     width: 100%;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding: 8vh 10vw;
+    box-sizing: border-box;
 }
