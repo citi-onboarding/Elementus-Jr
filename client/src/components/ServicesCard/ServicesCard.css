@@ -83,9 +83,11 @@
     overflow: hidden;
     
     
+    
 }
 .Services-card{
     height: 310px ;
+    
 }
 
 .image-box-center{  
@@ -162,4 +164,5 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease 0s;
 }
