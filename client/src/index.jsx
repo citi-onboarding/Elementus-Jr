@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import {
   Conteudo,
   Banner, 
+  ServicesCard,
+  Services
   Contato,
   Navbar,
   Trilha,

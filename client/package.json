@@ -6,7 +6,8 @@
     "axios": "^0.19.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "react-slick": "^0.26.1"
   },
   "scripts": {
     "serverwin": "react-scripts build && rd /q ..\\server\\public && move .\\build ..\\server\\public",
