@@ -183,6 +183,7 @@ html{
     .imgScrolled{
         width: 130px;
         height: 45px;
+        padding-top: 1vh;
         transition: 0.1s;
     }
 
