@@ -19,6 +19,7 @@
     border-bottom-right-radius: 10px;
     position: absolute;
     z-index: 1;
+    object-fit: cover;
 }
 
 .background2{
@@ -35,26 +36,25 @@
     margin-top: 8vh;
     height: 20vh;
     width: 40vw;
-    padding-left:18vw;
+    padding-left:15vw;
     font-family: "Poppins";
 }
 
 .descricao1{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #414141;
-    padding-left: 1vw;
+    width: 20vw;
 }
 
 .descricao2{
-    font-size: 5rem;
+    font-size: 4rem;
     color: #2e2e2e;
     margin-top: 0;
     margin-bottom: 5vh;
 }
 
 .descricao3{
-    padding-left: 1vw;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #707070;
     width: 25vw;
 }
@@ -71,7 +71,7 @@
     border-radius: 10px;
     border: solid 2px rgb(226, 226, 226);
     height: 5vh;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -81,7 +81,7 @@
     border-radius: 10px;
     border: solid 2px rgb(226, 226, 226);
     height: 5vh;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -91,7 +91,7 @@
     border-radius: 10px;
     border: solid 2px rgb(226, 226, 226);
     height: 5vh;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -101,14 +101,14 @@
     border-radius: 10px;
     border: solid 2px rgb(226, 226, 226);
     height: 10vh;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-left: 1vw;
     padding-top: 1vh;
 }
 
 textarea{
     font-family: 'Poppins', sans-serif;
-    font-size: 2em;
+    font-size: 1.2rem;
 }
 
 .buttonEnviar{
@@ -120,12 +120,140 @@ textarea{
     box-shadow: 2px 2px rgb(196, 196, 196);
     width: 12vw;
     height: 6vh;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #414141;
 }
 
+@media only screen and (max-width: 1200px){
+    .background{
+        display: flex;
+        height: 100vh;
+        justify-content: flex-end;
+    }
+    
+    .background1{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        height: 100vh;
+        width: 50vw;
+    }
+    
+    .imgContato{
+        height: 80vh;
+        width: 60vw;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+    }
+    
+    .background2{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(226, 226, 226);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height: 100vh;
+        width: 50vw;
+    }
+    
+    .cantainerInfo{
+        margin-top: 8vh;
+        height: 20vh;
+        width: 40vw;
+        padding-left: 15vw;
+        font-family: "Poppins";
+    }
+    
+    .descricao1{
+        font-size: 1rem;
+        color: #414141;
+    }
+    
+    .descricao2{
+        font-size: 2.5rem;
+        color: #2e2e2e;
+        margin-top: 0;
+        margin-bottom: 5vh;
+    }
+    
+    .descricao3{
+        font-size: 0.9rem;
+        color: #707070;
+        width: 29vw;
+    }
+    
+    .caixaInput{
+        display: flex;
+        flex-direction: column;
+        width: 27vw;
+    }
+    
+    .inputName{
+        margin-top: 3vh;
+        margin-bottom: 1vh;
+        border-radius: 10px;
+        border: solid 2px rgb(226, 226, 226);
+        height: 5vh;
+        font-size: 1rem;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    
+    .inputEmail{
+        margin-bottom: 1vh;
+        border-radius: 10px;
+        border: solid 2px rgb(226, 226, 226);
+        height: 5vh;
+        font-size: 1rem;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    
+    .inputTelefone{
+        margin-bottom: 1vh;
+        border-radius: 10px;
+        border: solid 2px rgb(226, 226, 226);
+        height: 5vh;
+        font-size: 1rem;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    
+    .inputMensagem{
+        margin-bottom: 1vh;
+        border-radius: 10px;
+        border: solid 2px rgb(226, 226, 226);
+        height: 10vh;
+        font-size: 1rem;
+        padding-left: 1vw;
+        padding-top: 1vh;
+    }
+    
+    textarea{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+    }
+    
+    .buttonEnviar{
+        margin-left: 10vw;
+        margin-top: 5vh;
+        border-radius: 30px;
+        border: none;
+        background-color: #FFDC00;
+        box-shadow: 2px 2px rgb(196, 196, 196);
+        width: 15vw;
+        height: 6vh;
+        font-size: 1.2rem;
+        color: #414141;
+    }
 
-@media only screen and (max-width: 700px){
+}
+
+
+@media only screen and (max-width: 820px){
     .background{
         display: flex;
         height: 100vh;
@@ -136,6 +264,100 @@ textarea{
         width: 10vw;
         height: 50vh;
         padding-top: 56vh;
+        background-color: white;
+    }
+    
+    .imgContato{
+        height: 30vh;
+        width: 50vw;
+    }
+    
+    .background2{
+        height: 80vh;
+        width: 90vw;
+        background-color: rgb(226, 226, 226);
+    }
+    
+    .cantainerInfo{
+        padding: 0;
+        width: 80vw;
+    }
+    
+    .descricao1{
+        margin: 0;
+        padding-left: 20vw;
+        width: 55vw;
+        font-size: 1rem;
+    }
+    
+    .descricao2{
+        font-size: 2rem;
+        padding-left: 30vw;
+        margin-top: 1vh;
+        color: black;
+    }
+    
+    .descricao3{
+        display: none;
+
+    }
+    
+    .caixaInput{
+        width: 80vw;
+    }
+    
+    .inputName{
+        font-size: 1rem;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    
+    .inputEmail{
+        font-size: 1rem;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    
+    .inputTelefone{
+        font-size: 1rem;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    
+    .inputMensagem{
+        font-size: 1rem;
+        padding-left: 4vw;
+        padding-top: 1vh;
+    }
+
+    .buttonEnviar{
+        margin-left: 40vw;
+        margin-top: 5vh;
+        border-radius: 30px;
+        border: none;
+        background-color: #FFDC00;
+        box-shadow: 2px 2px rgb(196, 196, 196);
+        width: 40vw;
+        height: 6vh;
+        font-size: 1.3rem;
+        color: #414141;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 500px){
+    .background{
+        display: flex;
+        height: 100vh;
+        justify-content: flex-end;
+    }
+
+    .background1{
+        width: 10vw;
+        height: 30vh;
+        padding-top: 65vh;
         background-color: white;
     }
     
@@ -216,3 +438,4 @@ textarea{
     }
 
 }
+

@@ -25,13 +25,6 @@ module.exports = (app) => {
     });
   });  
 
-  app.get('/api/banner', (req, res) => {
-    Banner.model.find((err, items) => {
-      if (err) return res.apiError('database error', err);
-      res.send(items);
-    });
-  });
-
   app.get('/api/depoiments', (req, res) => {
     Depoiment.model.find((err, items) => {
       if (err) return res.apiError('database error', err);
@@ -56,6 +49,13 @@ module.exports = (app) => {
 
   app.get('/api/informacoes', (req, res) => {
     InfoEmpresa.model.find((err, items) => {
+      if (err) return res.apiError('database error', err);
+      res.send(items);
+    });
+  });
+
+  app.get('/api/banner', (req, res) => {
+    Banner.model.find((err, items) => {
       if (err) return res.apiError('database error', err);
       res.send(items);
     });
