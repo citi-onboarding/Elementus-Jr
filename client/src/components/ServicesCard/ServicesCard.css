@@ -28,6 +28,7 @@
     width: 100%;
     height: 86%;
     z-index: 0;
+    object-fit: cover;
     
 }
 
@@ -49,7 +50,7 @@
     left : 15%;
     color: #FFFFFF;
     text-align: right;
-    font-weight: bold; 
+    font-weight: 600;
     font-size: 18px;
 }
     
@@ -89,13 +90,17 @@
     overflow: hidden;
     
 }
+.Services-card{
+    height: 300px ;
+}
 
 .image-box-center{  
     position: relative;
-    bottom: 25px; 
+    bottom: 35px; 
     overflow: hidden;
     width: 195px;
     height: 117px;
+
 }
 
 
@@ -103,7 +108,7 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    
+    object-fit: cover;   
 }
 
 .Description-center{
@@ -111,9 +116,9 @@
     text-align: left;
     max-width: 156px;
     font-size: 10px;
-    bottom: 10px;
     color: #707070;
     opacity: 1;
+    bottom: 1vh;
 }
 
 
@@ -138,10 +143,12 @@
     text-align: center;
     max-width: 161px;
     max-height: 0px;
-    font-size: 8px;
-    bottom: 47px;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 60px;
     color: #414141;
     opacity: 1;
+    
 }
 
 .Button-box-center{

@@ -2,23 +2,43 @@
 element.style {
     display: flex;
 
-}
+}      
 
 .Services{
-    width: 80vw;
-    padding: 10vw;
-
+    width: 78vw;
+    padding: 5vw 10vw 10vw 10vw;
+  
        
 }
 .services-card{
     height: 800px;
 }
 
+.services-top{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+#Services-title{
+    color: #414141;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 0px
+
+}
+
+#Services-description{
+    color: #414141;
+    font-size: 12px;
+}
+
 .slick-dots{
     display: flex;
     justify-content: center;
-    width: 53.5%;
+    width: 55%;
     padding: 0;
+    margin-top: 100px;
     list-style: none;
     text-align: center;
 }
@@ -38,6 +58,7 @@ element.style {
     background-color: #414141;
     opacity: 0.35;
     box-shadow: none;
+    transform: scale(1.4);
 }
 
 .slick-dots li button:before{
@@ -45,19 +66,23 @@ element.style {
 }
 
 .center .slick-center{
-    transform: scale(1.2)
+    transform: scale(1.5)
 }
 
-.slick-next:before{
-    color: black;
-}
 .slick-prev:before{
-    color: black;   
+    content: url(arrow.svg);
+    
+}
+.slick-next:before{
+    content: url(arrow.svg);
 }
 
+@media only screen and (max-width: 700px){
+    .slick-dots{
 
+    }
 
-
+}
 
 
 

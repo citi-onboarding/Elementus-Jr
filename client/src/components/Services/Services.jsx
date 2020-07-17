@@ -10,8 +10,8 @@ function Services() {
   const [centerTitle, setCenterTitle] = useState("");
 
   setInterval(() => {
-    if(document.querySelector(".slick-active h1")){
-      setCenterTitle(document.querySelector(".slick-active h1").innerText);
+    if (document.querySelector(".slick-center p")) {
+      setCenterTitle(document.querySelector(".slick-center p").innerText);
     }
   }, 500);
 
@@ -21,16 +21,25 @@ function Services() {
     dots: true,
     centerMode: true,
     infinite: true,
-    centerPadding: "350px",
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
+    centerPadding: "-10px",
+    responsive: [
+      {
+        breakpoint: 820,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        },
+      }
+    ],
   };
 
   const [services, setServices] = useState([]);
 
 
-  
+
   const loadServices = async () => {
     const res = await axios.get('http://localhost:3001/api/services');
     setServices(res.data);
@@ -43,15 +52,18 @@ function Services() {
   return (
     <main className="Services">
       <div className="Services-card">
-        <h2>Center Mode</h2>
+        <div className="services-top">
+          <p id="Services-description">--Entenda o que fazemos e onde atuamos</p>
+          <p id="Services-title">Nossos serviços</p>
+        </div>
         <Slider {...settings} className="Slider">
           {services?.map(({ _id, Title, Description, image, Link }) => (
-            centerTitle === Title?(
-                <ServicesCard _id={_id} Title={Title} isCenter={true} Description={Description} image={image[0]} Link={Link} />
-              ):(
+            centerTitle === Title ? (
+              <ServicesCard _id={_id} Title={Title} isCenter={true} Description={Description} image={image[0]} Link={Link} />
+            ) : (
                 <ServicesCard _id={_id} Title={Title} isCenter={false} Description={Description} image={image[0]} Link={Link} />
               )
-            ))}
+          ))}
         </Slider>
       </div>
     </main>

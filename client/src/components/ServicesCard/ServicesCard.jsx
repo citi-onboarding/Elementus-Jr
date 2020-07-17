@@ -12,30 +12,31 @@ function ServicesCard({ isCenter, _id, Title, Description, image, Link }) {
         setCenterMode(isCenter);
     }, [isCenter]);
 
-    
-    if (centerMode) { 
+
+    if (centerMode) {
         return (
             /* CARD DO MEIO */
-            <div>
-                <div key={_id}>
-                    <div className="Card-center">
-                        <div>
-                            <div className="image-box-center">
-                                <div className="blue-center"></div>
-                                <img src={image?.url} className="card-image-center"/>
+            <section className="Services-card">
+                <div className="container-services-card">
+                    <div key={_id}>
+                        <div className="Card-center">
+                            <div>
+                                <div className="image-box-center">
+                                    <div className="blue-center"></div>
+                                    <img src={image?.url} className="card-image-center" />
+                                </div>
+                            </div>
+                            <div className="title-box-center"> <p>{Title}</p> </div>
+                            <div className="Description-center">
+                                <p>{Description}</p>
                             </div>
                         </div>
-                        <div className="title-box-center"> <h1>{Title}</h1> </div>
-                        <div className="Description-center">
-                            <p>{Description}</p>
+                        <div className="Button-box-center">
+                            <Button Title="Saiba mais" buttonColor="#FFDC00" buttonSize="120px" buttonTextColor="Black" />
                         </div>
                     </div>
-                    <div className="Button-box-center">
-                        <Button Title="Saiba mais" buttonColor="#FFDC00" buttonSize="120px" buttonTextColor="Black" />
-                    </div>
                 </div>
-                
-            </div>
+            </section>
         )
     }
     else {
@@ -48,7 +49,7 @@ function ServicesCard({ isCenter, _id, Title, Description, image, Link }) {
                             <div className="image-box">
                                 <div className="blue"></div>
                                 <img src={image?.url} className="card-image" />
-                                <h1 className="title">{Title}</h1>
+                                <p className="title">{Title}</p>
                             </div>
                         </div>
                         <div className="Description">
