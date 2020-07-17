@@ -1,7 +1,11 @@
-.titulo-descricao{
-    background-color: #ffffff;
-    margin: 0;
+.container-trilha{
+    background-color: rgb(226, 226, 226);
+    z-index: -2;
 }
+
+
+
+
 
 .desc{
     padding-top: 5vh;

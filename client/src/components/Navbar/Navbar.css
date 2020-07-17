@@ -15,7 +15,7 @@
     right: 0.1px;
     width: 100%;
     transition: 0.3s;
-    z-index: 2;
+    z-index: 50;
 }
 
 .navbarScrolled{
@@ -32,7 +32,7 @@
     right: 0.1px;
     width: 100%;
     transition: 0.3s;
-    z-index: 2;
+    z-index: 50;
 }
 
 li{
@@ -53,14 +53,14 @@ li a:hover{
   }
 
 .img{
-    margin-left: 14vw;
+    margin-left: 10vw;
     width: 200px;
     height: 60px;
     transition: 0.3s;
 }
 
 .imgScrolled{
-    margin-left: 14vw;
+    margin-left: 12vw;
     width: 190px;
     height: 57px;
     transition: 0.3s;
