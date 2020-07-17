@@ -41,7 +41,7 @@ function Conteudo() {
               </div>
               <div className="btn">{tipoConteudo === "Artigo" ?
                 (<Button Title="Acesse" buttonColor="#FFDC00" buttonSize="120px" />)
-                : (<Button Title="Baixe" buttonColor="#00005A" buttonSize="120px" />)}
+                : (<Button Title="Baixe" buttonColor="#00005A" buttonSize="120px" buttonTextColor="white" />)}
               </div>
               <div className="descricaoCard">
                 <div className="Text-box">
