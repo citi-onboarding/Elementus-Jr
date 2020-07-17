@@ -1,5 +1,5 @@
 .section-conteudo{
-  padding: 0 12vw;
+  padding: 8vh 10vw;
 }
 
 .background-estilo{
@@ -110,10 +110,13 @@
 
 .Conteudo-title{
   position: relative;
-  
   bottom:2vh;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 600;
+}
+
+.descricao-titulo{
+  font-size: 1.2rem;
 }
 
 .foot{

@@ -14,7 +14,7 @@
 
 .imgContato{
     height: 80vh;
-    width: 60vw;
+    width: 50vw;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     position: absolute;
@@ -29,7 +29,7 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     height: 100vh;
-    width: 50vw;
+    width: 60vw;
 }
 
 .cantainerInfo{
@@ -48,6 +48,7 @@
 
 .descricao2{
     font-size: 4rem;
+    font-weight: 600;
     color: #2e2e2e;
     margin-top: 0;
     margin-bottom: 5vh;

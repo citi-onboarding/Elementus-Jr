@@ -56,7 +56,7 @@ function Services() {
     <main className="Services">
       <div className="Services-card">
         <div className="services-top">
-          <p id="Services-description">--Entenda o que fazemos e onde atuamos</p>
+          <p id="Services-description">- Entenda o que fazemos e onde atuamos</p>
           <p id="Services-title">Nossos serviços</p>
         </div>
         <Slider {...settings} className="Slider">
