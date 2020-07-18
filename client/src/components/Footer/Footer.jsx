@@ -46,7 +46,7 @@ function Footer() {
               </div>
               <div className="row-footer">
                <img src={email_icon} className="margin-icon" />
-                <p>{linkNewsletter}</p>
+                <p>contatoElementusJr@gmail.com</p>
               </div>  
             </div>
           </div>

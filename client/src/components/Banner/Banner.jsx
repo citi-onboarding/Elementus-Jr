@@ -19,7 +19,7 @@ function Banner() {
   }, []);
 
   return (
-    <div className="inicio">
+    <div className="inicio" id="inicio">
       {Banner?.map(({ _id, titulo, descricao, imagem}) => (
         <div className="main-content" key={_id}>
           <div className="container-banner">
@@ -31,7 +31,9 @@ function Banner() {
               ))}
             </div>
             <p className="Description-banner">{descricao}</p>
-            <Button Title="Contate-nos" buttonColor="#00005A" buttonSize= "180px" buttonTextColor="white"/>
+            <a href="#contato">
+              <Button Title="Contate-nos" buttonColor="#00005A" buttonSize= "180px" buttonTextColor="white"/>
+            </a>
           </div>
           
           <div className="Banner">  

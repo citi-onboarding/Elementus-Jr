@@ -133,6 +133,7 @@
 
 .link-newsletter{
   background-color: rgb(255, 255, 43);
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1080px){

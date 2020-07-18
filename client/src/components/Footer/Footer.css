@@ -78,8 +78,12 @@
 
 
 .button-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 @media(max-width: 700px) {
