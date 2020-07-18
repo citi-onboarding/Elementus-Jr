@@ -32,7 +32,7 @@ function ServicesCard({ isCenter, _id, Title, Description, image, Link }) {
                             </div>
                         </div>
                         <div className="Button-box-center">
-                            <Button Title="Saiba mais" buttonColor="#FFDC00" buttonSize="120px" buttonTextColor="Black" />
+                            <Button onClick={()=> window.open(Link)} Title="Saiba mais" buttonColor="#FFDC00" buttonSize="120px" buttonTextColor="Black" />
                         </div>
                     </div>
                 </div>

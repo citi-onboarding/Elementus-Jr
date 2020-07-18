@@ -123,6 +123,7 @@ textarea{
     height: 6vh;
     font-size: 1.3rem;
     color: #414141;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1200px){

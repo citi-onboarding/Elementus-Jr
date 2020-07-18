@@ -8,6 +8,18 @@ import {
 
 function Conteudo() {
   const [Conteudo, setConteudo] = useState([]);
+  const[isMobile, setIsMobile] = useState(false);
+  const [newsletter, setNewsletter] = useState([]);
+
+  const loadNewsletter = async () => {
+    const res = await axios.get('http://localhost:3001/api/informacoes');
+    setNewsletter(res.data[0].linkNewsletter);
+
+  };
+
+  useEffect(() => {
+    loadNewsletter();
+  }, []);
 
   const loadConteudo = async () => {
     const res = await axios.get('http://localhost:3001/api/conteudo');
@@ -19,6 +31,13 @@ function Conteudo() {
   }, []);
   console.log(Conteudo)
 
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 1080);
+    window.addEventListener('resize', () =>{
+      setIsMobile(window.innerWidth <= 1080);
+    }
+    );
+  }, []);
 
 
 
@@ -32,7 +51,7 @@ function Conteudo() {
       <div className="diagonal">
         <div className="container">
           {Conteudo?.map(({ _id, linkRedirecionamento, descricaoConteudo, autor, imagem, tipoConteudo, data }) => (
-            <div key={_id} className="Card">
+            <div key={_id} onClick = {isMobile ? () => window.open(linkRedirecionamento) : () => {}} className="Card">
               <div className="image-box">
                 <div className="image-box">
                   {tipoConteudo === "Artigo" ? (<div className="blue"> </div>) : (<div className="yellow"> </div>)}
@@ -40,8 +59,8 @@ function Conteudo() {
                 </div>
               </div>
               <div className="btn">{tipoConteudo === "Artigo" ?
-                (<Button Title="Acesse" buttonColor="#FFDC00" buttonSize="120px" />)
-                : (<Button Title="Baixe" buttonColor="#00005A" buttonSize="120px" buttonTextColor="white" />)}
+                (<Button onClick={()=> window.open(linkRedirecionamento)} Title="Acesse" buttonColor="#FFDC00" buttonSize="120px" />)
+                : (<Button onClick={()=> window.open(linkRedirecionamento)} Title="Baixe" buttonColor="#00005A" buttonSize="120px" buttonTextColor="white" />)}
               </div>
               <div className="descricaoCard">
                 <div className="Text-box">
@@ -58,8 +77,7 @@ function Conteudo() {
         </div>
       </div>
       <div className="foot">
-        <div id="yellow-text"> </div>
-        <p className="foot-text">Caso deseje obter conteúdo no seu e-mail, clique aqui e inscreva-se na nossa newsletter</p>
+        <p className="foot-text">Caso deseje obter conteúdo no seu e-mail, <a target="_blank" className="link-newsletter" href={newsletter}>clique aqui</a> e inscreva-se na nossa newsletter</p>
       </div>
     </section>
 

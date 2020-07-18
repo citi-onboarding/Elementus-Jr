@@ -127,12 +127,17 @@
 
 .foot-text{
   color: #414141;
-  max-width: 400px;
+  max-width: 340px;
   text-align: right;
   z-index: 2;
   font-size: 1.2rem;
-  
 }
+
+.link-newsletter{
+  background-color: rgb(255, 255, 43);
+  text-decoration: none;
+}
+
 #yellow-text{
   width: 95px;
   height: 10px;
@@ -144,7 +149,7 @@
 }
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 1080px){
   .section-conteudo{
     padding: 0;
   }
@@ -153,10 +158,11 @@
     display: block;
     position: absolute;
     background-color: rgb(236, 236, 236);
-    height: 100vh;
+    height: 50vh;
     width: 85vw;
     z-index: -1;
     border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
   }
   
   .Card{
@@ -172,6 +178,7 @@
     width: 80vw;
     height: 20vh;
     margin-bottom: 3vh;
+    margin-left: 4vw;
     overflow: hidden;
     transform: none;
   }
@@ -186,7 +193,7 @@
   
   .card-image{
     width: 17vh;
-    height: 30vh ;
+    height: 40vh ;
     object-fit: cover;
   }
   
