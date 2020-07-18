@@ -58,6 +58,7 @@ function Conteudo() {
         </div>
       </div>
       <div className="foot">
+        <div id="yellow-text"> </div>
         <p className="foot-text">Caso deseje obter conteúdo no seu e-mail, clique aqui e inscreva-se na nossa newsletter</p>
       </div>
     </section>

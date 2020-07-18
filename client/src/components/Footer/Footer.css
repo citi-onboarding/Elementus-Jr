@@ -40,13 +40,14 @@
 .footer-titles{
     color:#414141; 
     font-weight: 600; 
-    font-size: 16px;
+    font-size: 1.2rem;
 
 }
 
 .img-social-media{
     width: 30px;
     height: 30px;
+    margin-bottom: 10px;
 }
 
 .social-media{
@@ -78,6 +79,10 @@
 
 
 @media(max-width: 700px) {
+
+    .footer-titles{
+        font-size: 1.0rem;
+    }
     .footer{
       flex-wrap: wrap;
     }
