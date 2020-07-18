@@ -5,12 +5,13 @@ const Button = ({
   Title,
   buttonColor,
   buttonSize,
-  buttonTextColor
+  buttonTextColor,
+  onClick,
 }) => {
 
   return (
     <div>
-      <button style={{ backgroundColor: buttonColor, width: buttonSize, color: buttonTextColor }} className = {'button'} >
+      <button onClick = {onClick} style={{ backgroundColor: buttonColor, width: buttonSize, color: buttonTextColor }} className = {'button'} >
           <p className="text">{Title}</p>
       </button>
     </div>
