@@ -128,13 +128,26 @@
 .foot-text{
   color: #414141;
   max-width: 340px;
-  text-align: right; 
+  text-align: right;
+  z-index: 2;
+  font-size: 1.2rem;
 }
 
 .link-newsletter{
   background-color: rgb(255, 255, 43);
   text-decoration: none;
 }
+
+#yellow-text{
+  width: 95px;
+  height: 10px;
+  background-color: #FFDC00;
+  margin-top: 40px;
+  position: relative;
+  right: -110px;
+  z-index: 1;
+}
+
 
 @media only screen and (max-width: 1080px){
   .section-conteudo{
@@ -260,6 +273,8 @@
     text-align: right;
     padding-right: 5vw;
     padding-left: 5vw;
+    font-size: 1rem;
+    max-width: 340px;
   }
 
   .descricaoCard{
@@ -273,10 +288,11 @@
     margin-top: 0;
     padding-top: 2vh;
     padding-left: 5vw;
+    font-size: 1rem;
   }
   .Conteudo-title{
     padding-left: 10vw;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .uppercase{
@@ -286,5 +302,9 @@
   .dataBottom{
     font-size: 0.7rem;
   }
+
+  #yellow-text{
+   display: none;}
+
 
 }

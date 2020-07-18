@@ -124,9 +124,12 @@
     }
 
     #Services-title{
-        color: #414141;
-        font-size: 28px;
-        font-weight: 600;
+      font-size: 2rem;
+        
+    }
+
+    #Services-description{
+        font-size: 1.0rem;
     }
 
 }
