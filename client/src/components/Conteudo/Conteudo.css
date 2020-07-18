@@ -128,8 +128,11 @@
 .foot-text{
   color: #414141;
   max-width: 340px;
-  text-align: right;
-  
+  text-align: right; 
+}
+
+.link-newsletter{
+  background-color: rgb(255, 255, 43);
 }
 
 @media only screen and (max-width: 1080px){

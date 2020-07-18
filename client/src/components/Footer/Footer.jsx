@@ -34,9 +34,9 @@ function Footer() {
             <div className="up">
               <p className="footer-titles">Redes sociais</p>
               <div className="social-media">
-              <img src={facebook_logo} className="img-social-media" />
-              <img src={instagram_logo} className="img-social-media" />
-              <img src={linkedin_logo} className="img-social-media" />
+              <button className="button-footer" onClick={()=> window.open(linkFacebook)}><img src={facebook_logo} className="img-social-media" /></button>
+              <button className="button-footer" onClick={()=> window.open(linkInstagram)}><img src={instagram_logo} className="img-social-media" /></button>
+              <button className="button-footer" onClick={()=> window.open(linkLinkedin)}><img src={linkedin_logo} className="img-social-media" /></button>
               </div>
             </div>
             <div>

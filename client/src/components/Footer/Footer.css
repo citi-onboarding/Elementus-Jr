@@ -77,6 +77,11 @@
 }
 
 
+.button-footer{
+    background-color: transparent;
+    border: none;
+}
+
 @media(max-width: 700px) {
     .footer{
       flex-wrap: wrap;
