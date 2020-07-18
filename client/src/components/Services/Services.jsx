@@ -6,9 +6,6 @@ import {
   ServicesCard
 } from '..\\..\\components';
 
-
-
-
 function Services() {
   const [centerTitle, setCenterTitle] = useState("");
 
@@ -53,7 +50,7 @@ function Services() {
   }, []);
 
   return (
-    <main className="Services">
+    <main id="servicos" className="Services">
       <div className="Grey-box-sc">
         <p></p>
       </div>
@@ -77,15 +74,5 @@ function Services() {
     
   );
 }
-
-// {services?.map(({ _id, Title, Description, image, Link }) => (
-
-
-
-
-
-
-
-
 
 export default Services;

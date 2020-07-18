@@ -18,8 +18,9 @@ function Trilha(){
     }, []);
 
     useEffect(() => {
+        setWindowWidth(window.innerWidth < 700);
         window.addEventListener('resize', () =>{
-          setWindowWidth(window.innerWidth < 700)
+          setWindowWidth(window.innerWidth < 700);
         }
         );
       }, []);

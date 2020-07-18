@@ -8,10 +8,9 @@
   opacity: 1;
   border: none;
   height: 40px;
-  
+  cursor: pointer;
 }
 
 .text{
   margin: 10px;
-
 }
