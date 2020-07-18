@@ -132,7 +132,7 @@
   
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 1080px){
   .section-conteudo{
     padding: 0;
   }
@@ -161,6 +161,7 @@
     width: 80vw;
     height: 20vh;
     margin-bottom: 3vh;
+    margin-left: 4vw;
     overflow: hidden;
     transform: none;
   }
