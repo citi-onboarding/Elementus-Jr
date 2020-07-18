@@ -77,6 +77,11 @@
 }
 
 
+.button-footer{
+    background-color: transparent;
+    border: none;
+}
+
 @media(max-width: 700px) {
     .footer{
       flex-wrap: wrap;
@@ -90,12 +95,13 @@
         align-items: flex-start ;
         height: 200px;
         padding-left: 10vw;
+        box-sizing: border-box;
         
     }
     .up{
         order: -1;
         justify-self: flex-end;
-        margin-left: 55vw;
+        margin-left: 50vw;
         margin-top: -18vh;
         
     }

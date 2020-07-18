@@ -9,6 +9,20 @@ import {
 function Conteudo() {
   const [Conteudo, setConteudo] = useState([]);
   const[isMobile, setIsMobile] = useState(false);
+<<<<<<< HEAD
+=======
+  const [newsletter, setNewsletter] = useState([]);
+
+  const loadNewsletter = async () => {
+    const res = await axios.get('http://localhost:3001/api/informacoes');
+    setNewsletter(res.data[0].linkNewsletter);
+
+  };
+
+  useEffect(() => {
+    loadNewsletter();
+  }, []);
+>>>>>>> 2694bddd79e47093b066096cb6f87262b320c723
 
   const loadConteudo = async () => {
     const res = await axios.get('http://localhost:3001/api/conteudo');
@@ -21,8 +35,14 @@ function Conteudo() {
   console.log(Conteudo)
 
   useEffect(() => {
+<<<<<<< HEAD
     window.addEventListener('resize', () =>{
       setIsMobile(window.innerWidth <= 1080)
+=======
+    setIsMobile(window.innerWidth <= 1080);
+    window.addEventListener('resize', () =>{
+      setIsMobile(window.innerWidth <= 1080);
+>>>>>>> 2694bddd79e47093b066096cb6f87262b320c723
     }
     );
   }, []);
@@ -39,7 +59,11 @@ function Conteudo() {
       <div className="diagonal">
         <div className="container">
           {Conteudo?.map(({ _id, linkRedirecionamento, descricaoConteudo, autor, imagem, tipoConteudo, data }) => (
+<<<<<<< HEAD
             <div key={_id} onClick = {!isMobile ? window.open(linkRedirecionamento) : () => {}} className="Card">
+=======
+            <div key={_id} onClick = {isMobile ? () => window.open(linkRedirecionamento) : () => {}} className="Card">
+>>>>>>> 2694bddd79e47093b066096cb6f87262b320c723
               <div className="image-box">
                 <div className="image-box">
                   {tipoConteudo === "Artigo" ? (<div className="blue"> </div>) : (<div className="yellow"> </div>)}
@@ -65,7 +89,7 @@ function Conteudo() {
         </div>
       </div>
       <div className="foot">
-        <p className="foot-text">Caso deseje obter conteúdo no seu e-mail, clique aqui e inscreva-se na nossa newsletter</p>
+        <p className="foot-text">Caso deseje obter conteúdo no seu e-mail, <a className="link-newsletter" href={newsletter}>clique aqui</a> e inscreva-se na nossa newsletter</p>
       </div>
     </section>
 

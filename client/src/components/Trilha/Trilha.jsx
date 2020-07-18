@@ -25,7 +25,7 @@ function Trilha(){
       }, []);
 
     return(
-        <div >
+        <div className= "container-trilha" >
             {!windowWidth ? (
                 <div >
                     <div className="titulo-descricao">

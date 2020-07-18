@@ -1,14 +1,18 @@
-.titulo-descricao{
-    background-color: #ffffff;
-    margin: 0;
+.container-trilha{
+    background-color: rgb(226, 226, 226);
+    z-index: -2;
 }
+
+
+
+
 
 .desc{
     padding-top: 5vh;
     padding-left: 10vw;
     margin: 0;
     color: #414141;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .titulo{
@@ -16,7 +20,7 @@
     padding-left: 10vw;
     margin: 0;
     color: #414141;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .desc-mobile{
@@ -39,12 +43,12 @@
 .estiloMobile{
     height: 80vh;
     width: 100%;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding: 8vh 10vw;
+    box-sizing: border-box;
 }
 
 .estiloWeb{
     width: 100%;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding: 8vh 10vw;
+    box-sizing: border-box;
 }

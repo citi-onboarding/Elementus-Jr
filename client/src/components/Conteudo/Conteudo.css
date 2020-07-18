@@ -1,5 +1,5 @@
 .section-conteudo{
-  padding: 0 12vw;
+  padding: 8vh 10vw;
 }
 
 .background-estilo{
@@ -110,10 +110,13 @@
 
 .Conteudo-title{
   position: relative;
-  
   bottom:2vh;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 600;
+}
+
+.descricao-titulo{
+  font-size: 1.2rem;
 }
 
 .foot{
@@ -125,11 +128,12 @@
 .foot-text{
   color: #414141;
   max-width: 340px;
-  text-align: right;
-  
+  text-align: right; 
 }
 
-
+.link-newsletter{
+  background-color: rgb(255, 255, 43);
+}
 
 @media only screen and (max-width: 1080px){
   .section-conteudo{
@@ -163,7 +167,6 @@
     margin-left: 4vw;
     overflow: hidden;
     transform: none;
-    
   }
   
   .image-box{  
