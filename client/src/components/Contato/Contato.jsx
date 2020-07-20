@@ -16,6 +16,7 @@ function Contato(){
                     
                     <div className="caixaInput">
                         <input className="inputName" type="text" placeholder="Nome"/>
+                        <input className="inputNameEmpresa" type="text" placeholder="Nome da Empresa"/>
                         <input className="inputEmail" type="email" placeholder="E-mail"/>
                         <input className="inputTelefone" type="Number" placeholder="Telefone"/>
                         <textarea className="inputMensagem" type="Textarea" placeholder="Mensagem"/>
