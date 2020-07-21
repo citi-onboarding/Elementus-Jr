@@ -82,7 +82,7 @@ module.exports = (app) => {
 
     const mailOptions = {
 			from: `"${nome}" <${email}>`,
-			to: 'contatoelementus@gmail.com',
+			to: "gioavs@hotmail.com",
 			subject: nomeEmpresa,
 			text: `${nome} <${email}> <${telefone}>\n\n${mensagem}`
 		}
