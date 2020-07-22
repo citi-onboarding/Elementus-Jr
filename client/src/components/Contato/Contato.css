@@ -77,6 +77,16 @@
     padding-right: 1vw;
 }
 
+.inputNameEmpresa{
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    border: solid 2px rgb(226, 226, 226);
+    height: 5vh;
+    font-size: 1.2rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
 .inputEmail{
     margin-bottom: 1vh;
     border-radius: 10px;
@@ -203,6 +213,16 @@ textarea{
         padding-left: 1vw;
         padding-right: 1vw;
     }
+
+    .inputNameEmpresa{
+        margin-bottom: 1vh;
+        border-radius: 10px;
+        border: solid 2px rgb(226, 226, 226);
+        height: 5vh;
+        font-size: 1.2rem;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
     
     .inputEmail{
         margin-bottom: 1vh;
@@ -309,6 +329,13 @@ textarea{
     }
     
     .inputName{
+        font-size: 1rem;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        margin-top: 0;
+    }
+
+    .inputNameEmpresa{
         font-size: 1rem;
         padding-left: 4vw;
         padding-right: 4vw;
