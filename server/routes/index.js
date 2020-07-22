@@ -66,7 +66,7 @@ module.exports = (app) => {
     const nome = req.body.nome
     const nomeEmpresa = req.body.nomeEmpresa
 		const email = req.body.email
-		const telefone = req.body.tel
+		const telefone = req.body.telefone
 		const mensagem = req.body.mensagem
     
     const transporter = nodemailer.createTransport({
@@ -82,7 +82,7 @@ module.exports = (app) => {
 
     const mailOptions = {
 			from: `"${nome}" <${email}>`,
-			to: "gioavs@hotmail.com",
+			to: "contatoelementusjr@gmail.com",
 			subject: nomeEmpresa,
 			text: `${nome} <${email}> <${telefone}>\n\n${mensagem}`
 		}
