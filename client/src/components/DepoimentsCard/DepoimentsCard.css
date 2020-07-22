@@ -1,0 +1,176 @@
+.container-dc{
+    display: flex;
+    justify-content: center;
+}
+
+.card-dc{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 3px solid #DFDFDF;
+    border-radius: 13px 13px 15px 15px;
+    box-shadow: 0px 3px 12px #00000029;
+    width: 50vw;
+    border-top: 5px solid #00005A ;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 80px;
+
+}
+
+.image-box-dc{
+    border-radius: 50%;
+    border: 3px solid #DFDFDF;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+}
+
+
+.blue-dc{
+    background: #00005A;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.20;
+}
+
+.depoiments-image{
+    width: 100%;
+    object-fit: cover;
+}
+
+.client-name-text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #414141;
+    margin-top: 20px;
+
+}
+
+.company-function-text{
+    font-size: 1.7rem;
+    color: #414141;
+    margin-top: -25px;
+}
+
+.depoiment-text{
+    font-size: 1.2rem;
+    color: #707070;
+    max-width: 32vw;
+    line-height: 25px;
+}
+
+
+.yellow-box-dc-container{
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ 
+}
+
+
+.yellow-box-dc{
+    background-color: #FFDC00;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    margin-bottom: -400px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px; 
+}
+
+.img-social-media-dc{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    z-index: 30;
+}
+
+.button-dc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.yellow-line{
+    width: 80px;
+    height: 3px;
+    background-color: #FFDC00;
+    margin-top: -5px;
+}
+
+
+@media(max-width: 700px) {
+    .card-dc{
+        width: 70vw;   
+    }
+    
+    .column{
+        bottom: 60px;
+    }
+    
+    .image-box-dc{
+        width: 100px;
+        height: 100px;
+    }
+    
+    
+    .blue-dc{
+        width: 100px;
+        height: 100px;
+    }
+
+    
+    .client-name-text{
+        font-size: 1.5rem;
+        margin-top: 20px;
+    
+    }
+    
+    .company-function-text{
+        font-size: 1.2rem;
+        margin-top: -15px;
+    }
+    
+    .depoiment-text{
+        font-size: 1.0rem;
+        max-width: 50vw;
+    }
+    
+    
+    .yellow-box-dc{
+        background-color: white;
+        width: 30px;
+        margin-bottom: -120px;
+    }
+    
+    .img-social-media-dc{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    
+    .yellow-line{
+        width: 50px;
+        height: 2px;
+        margin-top: -5px;
+    }
+
+
+
+}
