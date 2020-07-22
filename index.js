@@ -1,6 +1,6 @@
 const keystone = require('keystone');
-
 const path = require('path');
+
 
 require('dotenv').config();
 
@@ -18,7 +18,8 @@ keystone.init({
 });
 
 keystone.import('./server/models');
-
 keystone.set('routes', require('./server/routes'));
-
+keystone.set('cors allow origin', true);
+keystone.set('cors allow methods', true);
+keystone.set('cors allow headers', true);
 keystone.start();
