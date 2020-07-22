@@ -8,6 +8,7 @@ import {
   Contato,
   Navbar,
   Trilha,
+  DepoimentsCard, 
 } from '.\\components';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Banner />
       <Services />
       <Trilha />
+      <DepoimentsCard/>
       <Conteudo/>
       <Contato />
       <Footer></Footer>

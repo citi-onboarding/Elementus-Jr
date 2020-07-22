@@ -7,6 +7,7 @@ import Contato from '.\\Contato';
 import Navbar from '.\\Navbar';
 import Trilha from '.\\Trilha';
 import Footer from '.\\Footer';
+import DepoimentsCard from '.\\DepoimentsCard';
 
 export {
   Button,
@@ -18,4 +19,5 @@ export {
   Navbar,
   Trilha,
   Footer,
+  DepoimentsCard,
 };
