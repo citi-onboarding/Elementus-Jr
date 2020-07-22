@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56.381" height="56.38" viewBox="0 0 56.381 56.38">
+  <defs>
+    <filter id="Icon_awesome-linkedin-in" x="0" y="0" width="56.381" height="56.38" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_awesome-linkedin-in)">
+    <path id="Icon_awesome-linkedin-in-2" data-name="Icon awesome-linkedin-in" d="M8.591,38.381H.634V12.756H8.591ZM4.608,9.261A4.63,4.63,0,1,1,9.217,4.609,4.647,4.647,0,0,1,4.608,9.261Zm33.764,29.12h-7.94V25.907c0-2.973-.06-6.785-4.137-6.785-4.137,0-4.771,3.23-4.771,6.571V38.381H13.576V12.756h7.632v3.5h.111a8.361,8.361,0,0,1,7.529-4.138c8.053,0,9.534,5.3,9.534,12.191V38.381Z" transform="translate(9 6)" fill="#414141"/>
+  </g>
+</svg>
