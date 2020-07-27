@@ -9,6 +9,7 @@ import {
   Navbar,
   Trilha,
   DepoimentsCard, 
+  Depoiments
 } from '.\\components';
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <Banner />
       <Services />
       <Trilha />
-      <DepoimentsCard/>
+      <Depoiments/>
       <Conteudo/>
       <Contato />
       <Footer></Footer>

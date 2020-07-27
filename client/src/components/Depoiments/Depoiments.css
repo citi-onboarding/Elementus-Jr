@@ -1,36 +1,18 @@
-.Grey-box-sc{
-    background-color:#414141;
-    opacity: 0.1;
-    border-radius: 10px;
-    height: 60vh;
-    width: 93vw;
-    position: absolute;
-    left: 0px;
-    top: 20px;
-    margin-top: -110px;
-    z-index: -2,
-}
 
-
-
-.Services{
+.depoiments{
     position: relative;
-    
     width: 78vw;
     padding: 5vw 10vw 10vw 10vw; 
        
 }
-.services-card{
-    height: 800px;
-}
 
-.services-top{
+.depoiments-top{
     display: flex;
     flex-direction: column;
     text-align: right;
 }
 
-#Services-title{
+#depoiments-title{
     color: #414141;
     font-size: 4rem;
     font-weight: 600;
@@ -38,7 +20,7 @@
 
 }
 
-#Services-description{
+#depoiments-description{
     color: #414141;
     font-size: 1.2rem;
 }
@@ -46,7 +28,7 @@
 .slick-dots{
     display: flex;
     justify-content: center;
-    width: 56%;
+    width: 55,1%;
     padding: 0;
     margin-top: 100px;
     list-style: none;
@@ -62,14 +44,12 @@
     opacity: 0.15;
     border-radius: 50%;
     box-shadow: 2px 2px 4px #00222D33;
-    transform: scale(1.);
 }
 
 .Slider .slick-dots .slick-active{
     background-color: #414141;
     opacity: 0.35;
     box-shadow: none;
-    transform: scale(1.5);
         
 }
 
@@ -78,12 +58,11 @@
 }
 
 .slick-prev{
-    
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-.slick-next{
-    
-}
+
 
 .slick-prev:before{
     content: url(arrow.svg);
@@ -97,15 +76,11 @@
 @media only screen and (max-width: 700px){
     .slick-dots{
         width: 65%;
-       
     }
 
-    .Services {
-        width: auto;
-    }
-    
+
     .slick-prev{
-        transform: rotate(180deg) scale(0.5);
+        transform: scaleX(-1) scale(0.5);
         margin-left: 30px;
     }
     
@@ -133,6 +108,5 @@
 
 
 .blank-space{
-    height: 25vh;
-    
+    height: 25vh;   
 }

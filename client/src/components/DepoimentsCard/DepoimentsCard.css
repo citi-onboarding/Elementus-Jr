@@ -1,6 +1,7 @@
 .container-dc{
     display: flex;
     justify-content: center;
+    margin-top: 10vh;
 }
 
 .card-dc{
@@ -117,8 +118,6 @@
     top: 170px;
     left: 80px;
     height: 0;
-
-
 }
 
 .quote-img{
@@ -139,6 +138,7 @@
     .image-box-dc{
         width: 100px;
         height: 100px;
+        z-index: 100;
     }
     
     
@@ -189,8 +189,6 @@
         top: 135px;
         left: 10px;
         height: 0;
-    
-    
     }
     
     .quote-img{

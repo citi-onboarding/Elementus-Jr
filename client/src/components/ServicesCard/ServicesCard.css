@@ -9,8 +9,8 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    width: 190px;
-    height: 270px;
+    width: 15vw;
+    height: 38vh;
     overflow: hidden;
     
 }
@@ -19,8 +19,8 @@
     position: relative;
     bottom: 25px; 
     overflow: hidden;
-    width: 195px;
-    height: 225px;
+    width: 15vw;
+    height: 30vh;
 }
 
 
@@ -35,8 +35,8 @@
 .Description-sc{
     position: relative;
     text-align: left;
-    max-width: 156px;
-    font-size: 10px;
+    max-width: 12vw;
+    font-size: 0.8vw;
     bottom: 40px;
     color: #707070;
     opacity: 1;
@@ -44,21 +44,21 @@
 
 .title-sc{
     z-index: 11;
-    width: 150px;
-    position: absolute;
-    bottom: 25%;
-    left : 15%;
+    width: 11vw;
+    position: relative;
+    bottom: 16vh;
+    left : 2vw;
     color: #FFFFFF;
     text-align: right;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.5vw;
 }
     
 
 .blue-sc{
     background: linear-gradient(#00005A4A,#00005A);
-    width: 195px;
-    height: 193px;
+    width: 15vw;
+    height: 25.7vh;
     position: absolute;
     z-index: 10;
     opacity: 0.50;
@@ -78,15 +78,15 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    width: 190px;
-    height: 270px;
+    width: 15vw;
+    height: 38vh;
     overflow: hidden;
     
     
     
 }
 .Services-card{
-    height: 310px ;
+    height: 44vh;
     
 }
 
@@ -94,8 +94,8 @@
     position: relative;
     bottom: 35px; 
     overflow: hidden;
-    width: 195px;
-    height: 117px;
+    width: 15vw;
+    height: 16vh;
 
 }
 
@@ -110,18 +110,18 @@
 .Description-center{
     position: relative;
     text-align: left;
-    max-width: 156px;
-    font-size: 10px;
+    max-width: 12.3vw;
+    font-size: 0.8vw;
     color: #707070;
     opacity: 1;
-    bottom: 1vh;
+    bottom: 0vh;
 }
 
 
 .blue-center{
     background: linear-gradient(#00005A4A,#00005A);
-    width: 195px;
-    height: 117px;
+    width: 15vw;
+    height: 16vh;
     position: absolute;
     z-index: 10;
     opacity: 0.50;
@@ -137,11 +137,11 @@
 .title-box-center{
     position: relative;
     text-align: center;
-    max-width: 161px;
+    max-width: 12vw;
     max-height: 0px;
-    font-size: 16px;
+    font-size: 1.2vw;
     font-weight: 600;
-    bottom: 60px;
+    bottom: 7vh;
     color: #414141;
     opacity: 1;
     
@@ -150,10 +150,10 @@
 .Button-box-center{
     position: relative;
     text-align: center;
-    max-width: 161px;
+    max-width: 15vw ;
     max-height: 0px;
     font-size: 8px;
-    left: 18px;
+    
     bottom: 15px;
     color: #414141;
     opacity: 1;
@@ -165,4 +165,17 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease 0s;
+}
+
+
+@media only screen and (max-width: 700px){
+    .Card-shape-sc {
+        width: 190px;
+        height: 270px;
+    }
+
+    .Card-shape-center{ 
+        width: 190px;
+        height: 270px;
+    }
 }
