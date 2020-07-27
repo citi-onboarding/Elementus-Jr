@@ -10,7 +10,7 @@
     align-items: center;
     flex-direction: column;
     width: 15vw;
-    height: 38vh;
+    height: 45vh;
     overflow: hidden;
     
 }
@@ -79,23 +79,23 @@
     align-items: center;
     flex-direction: column;
     width: 15vw;
-    height: 38vh;
+    height: 45vh;
     overflow: hidden;
     
     
     
 }
 .Services-card{
-    height: 44vh;
+    height: 52vh;
     
 }
 
 .image-box-center{  
     position: relative;
-    bottom: 35px; 
+    bottom: 5vh; 
     overflow: hidden;
     width: 15vw;
-    height: 16vh;
+    height: 18vh;
 
 }
 
@@ -111,6 +111,7 @@
     position: relative;
     text-align: left;
     max-width: 12.3vw;
+    height: 15vh;
     font-size: 0.8vw;
     color: #707070;
     opacity: 1;
@@ -121,7 +122,7 @@
 .blue-center{
     background: linear-gradient(#00005A4A,#00005A);
     width: 15vw;
-    height: 16vh;
+    height: 18vh;
     position: absolute;
     z-index: 10;
     opacity: 0.50;
@@ -141,7 +142,7 @@
     max-height: 0px;
     font-size: 1.2vw;
     font-weight: 600;
-    bottom: 7vh;
+    bottom: 8vh;
     color: #414141;
     opacity: 1;
     
@@ -153,7 +154,6 @@
     max-width: 15vw ;
     max-height: 0px;
     font-size: 8px;
-    
     bottom: 15px;
     color: #414141;
     opacity: 1;
@@ -168,7 +168,7 @@
 }
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 820px){
     .Card-shape-sc {
         width: 190px;
         height: 270px;
@@ -177,5 +177,31 @@
     .Card-shape-center{ 
         width: 190px;
         height: 270px;
+    }
+
+    .Button-box-center{
+     max-width: 190px ;
+    }
+
+    .blue-center{
+        width: 195px;
+        height: 117px;
+    }
+    .Description-center{
+        max-width: 156px;
+        font-size: 10px;
+        height: 65px;
+    }
+
+    .image-box-center{  
+        width: 195px;
+        height: 117px;
+
+    }
+
+    .title-box-center{
+    max-width: 161px;
+    max-height: 0px;
+    font-size: 16px;
     }
 }
