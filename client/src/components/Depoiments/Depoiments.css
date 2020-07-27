@@ -95,18 +95,14 @@
         right: 0;
     }
 
-    #Services-title{
+    #depoiments-title{
       font-size: 2rem;
         
     }
 
-    #Services-description{
+    #depoiments-description{
         font-size: 1.0rem;
     }
 
 }
 
-
-.blank-space{
-    height: 25vh;   
-}

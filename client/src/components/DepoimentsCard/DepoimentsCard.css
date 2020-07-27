@@ -128,7 +128,8 @@
 
 @media(max-width: 700px) {
     .card-dc{
-        width: 70vw;   
+        width: 65vw;   
+        height: 42vh;
     }
     
     .column{
@@ -149,7 +150,7 @@
 
     
     .client-name-text{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-top: 20px;
     
     }
