@@ -12,7 +12,7 @@ function Widget(){
     const backgroundWidget = document.getElementsByClassName("backgroundWidgetDesactived");
 
     useEffect(()=>{
-        backgroundWidget[0].addEventListener("click", ()=>{setWidget("widgetTextBoxDesactived")}, false);
+        backgroundWidget[0].addEventListener("click", ()=>{setWidget("widgetTextBoxDesactived"); setBackground("backgroundWidgetDesactived");}, false);
     }, []);
     
     
