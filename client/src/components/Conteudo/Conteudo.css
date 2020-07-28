@@ -1,10 +1,15 @@
 .section-conteudo{
   padding: 8vh 10vw;
+
 }
 
 .background-estilo{
-  display: none;
+display: none;
 }
+
+
+
+
 
 .Card{
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -163,6 +168,8 @@
     z-index: -1;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    border-bottom-left-radius: none;
+    border-top-left-radius: none;
   }
   
   .Card{

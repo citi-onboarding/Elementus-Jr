@@ -20,9 +20,6 @@
     padding: 5vw 10vw 10vw 10vw; 
        
 }
-.services-card{
-    height: 800px;
-}
 
 .services-top{
     display: flex;
@@ -44,9 +41,9 @@
 }
 
 .slick-dots{
-    display: flex;
+    display: flex !important;
     justify-content: center;
-    width: 56%;
+    width: 100%;
     padding: 0;
     margin-top: 100px;
     list-style: none;
@@ -77,14 +74,6 @@
     content: none;
 }
 
-.slick-prev{
-    
-}
-
-.slick-next{
-    
-}
-
 .slick-prev:before{
     content: url(arrow.svg);
     transform: rotate(180deg) !important;  
@@ -95,11 +84,6 @@
 }
 
 @media only screen and (max-width: 700px){
-    .slick-dots{
-        width: 65%;
-       
-    }
-
     .Services {
         width: auto;
     }
@@ -133,6 +117,5 @@
 
 
 .blank-space{
-    height: 18vh;
-    
+    height: 30vh;
 }
