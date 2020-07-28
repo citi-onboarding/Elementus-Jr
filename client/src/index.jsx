@@ -9,6 +9,7 @@ import {
   Navbar,
   Trilha,
   DepoimentsCard, 
+  Widget,
 } from '.\\components';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return(
     <div className="app">
       <Navbar />
+      <Widget />
       <Banner />
       <Services />
       <Trilha />
