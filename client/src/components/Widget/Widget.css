@@ -8,7 +8,15 @@
     z-index: 2;
 }
 
+.backgroundWidgetDesactived{
+    display: none;
+}
+
 .buttonWidget{
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
     margin: 5vw 5vh;
     background-color:#FFDC00;
     box-shadow: 0px 3px 12px #00000029;
@@ -17,25 +25,55 @@
     width: 80px;
     height: 80px;
     border-radius: 100px;
+    outline: none;
 }
 
 .widgetTextBox{
+    position: fixed;
+    bottom: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     background-color: white;
     width: 380px;
     height: 140px;
-    padding: 20px 10px;
+    padding: 20px 30px;
     box-shadow: 0px 2px 8px #00000029;
     border: 2px solid #DFDFDF;
     border-radius: 15px;
     opacity: 1;
     margin-bottom: 15vh;
+    margin-right: 8vw;
+    z-index: 3;
+    padding-right: 10px;
+    transition: 0.3s;
+}
+
+.widgetTextBoxDesactived{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 380px;
+    height: 140px;
+    padding: 20px 30px;
+    box-shadow: 0px 2px 8px #00000029;
+    border: 2px solid #DFDFDF;
+    border-radius: 15px;
+    opacity: 0;
+    margin-bottom: 15vh;
+    margin-right: 8vw;
+    z-index: -1;
+    padding-right: 10px;
+    transition: 0.3s;
 }
 
 .TituloTextBox{
     font-size: 1.3rem;
     font-weight: 300;
+    margin-top: 0;
 }
 
 .MsgTextBox{
@@ -44,20 +82,30 @@
     opacity: 1;
     padding: 5px 5px;
     width: 300px;
+    outline: none;
 }
 
 .Msg-Button-Textbox{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .ButtonTextBox{
-    border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     width: 60px;
     height: 60px;
     background-color: #FFDC00;
     border: 2px solid #A2A2A2;
+    cursor: pointer;
+    outline: none;
+}
+
+.img-button-enviar{
+    width: 25px;
+    height: 25px;
+    padding-right: 3px;
+    padding-top: 3px;
 }
 
 @media only screen and (max-width: 700px){
@@ -65,5 +113,37 @@
         margin: 20vw 5vh;
         width: 65px;
         height: 65px;
+    }
+
+    .widgetTextBox{
+        width: 70vw;
+        height: 15vh;
+        padding: 20px 30px;
+        margin-bottom: 150px;
+    }
+
+    .widgetTextBoxDesactived{
+        width: 70vw;
+        height: 15vh;
+        padding: 20px 30px;
+        margin-bottom: 150px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .TituloTextBox{
+        font-size: 0.9rem;
+    }
+    
+    .ButtonTextBox{
+        width: 45px;
+        height: 45px;
+    }
+
+    .MsgTextBox{
+        opacity: 1;
+        padding: 5px 5px;
+        width: 50vw;
+        height: 6vh;
     }
 }
