@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import '.\\Services.css';
+import React, { useState, useEffect } from "react";
+import ".\\Services.css";
 import Slider from "react-slick";
-import axios from 'axios';
-import {
-  ServicesCard
-} from '..\\..\\components';
+import axios from "axios";
+import { ServicesCard } from "..\\..\\components";
 
 function Services() {
   const [centerTitle, setCenterTitle] = useState("");
@@ -32,16 +30,14 @@ function Services() {
           slidesToShow: 1,
           centerMode: true,
         },
-      }
+      },
     ],
   };
 
   const [services, setServices] = useState([]);
 
-
-
   const loadServices = async () => {
-    const res = await axios.get('http://localhost:3001/api/services');
+    const res = await axios.get("http://localhost:3001/api/services");
     setServices(res.data);
   };
 
@@ -56,22 +52,37 @@ function Services() {
       </div>
       <div className="Services-card">
         <div className="services-top">
-          <p id="Services-description">- Entenda o que fazemos e onde atuamos</p>
+          <p id="Services-description">
+            - Entenda o que fazemos e onde atuamos
+          </p>
           <p id="Services-title">Nossos serviços</p>
         </div>
         <Slider {...settings} className="Slider">
-          {services?.map(({ _id, Title, Description, image, Link }) => (
+          {services?.map(({ _id, Title, Description, image, Link }) =>
             centerTitle === Title ? (
-              <ServicesCard _id={_id} Title={Title} isCenter={true} Description={Description} image={image[0]} Link={Link} />
+              <ServicesCard
+                _id={_id}
+                Title={Title}
+                isCenter={true}
+                Description={Description}
+                image={image[0]}
+                Link={Link}
+              />
             ) : (
-                <ServicesCard _id={_id} Title={Title} isCenter={false} Description={Description} image={image[0]} Link={Link} />
-              )
-          ))}
+              <ServicesCard
+                _id={_id}
+                Title={Title}
+                isCenter={false}
+                Description={Description}
+                image={image[0]}
+                Link={Link}
+              />
+            )
+          )}
         </Slider>
       </div>
       <div className="blank-space"> </div>
     </main>
-    
   );
 }
 

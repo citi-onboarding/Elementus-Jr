@@ -1,31 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import {
   Conteudo,
-  Banner, 
+  Banner,
   Footer,
   Services,
   Contato,
   Navbar,
   Trilha,
-  DepoimentsCard, 
-  Depoiments
-} from '.\\components';
+  DepoimentsCard,
+  Depoiments,
+} from ".\\components";
 
 function App() {
-
-  return(
+  return (
     <div className="app">
       <Navbar />
       <Banner />
       <Services />
       <Trilha />
-      <Depoiments/>
-      <Conteudo/>
+      <Depoiments />
+      <Conteudo />
       <Contato />
       <Footer></Footer>
     </div>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));

@@ -1,58 +1,48 @@
-
-.depoiments{
-    position: relative;
-    width: 78vw;
-    padding: 5vw 10vw 10vw 10vw; 
-       
+.depoiments {
+  position: relative;
+  width: 78vw;
+  padding: 5vw 10vw 10vw 10vw;
 }
 
-.depoiments-top{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
+.depoiments-top {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
 }
 
-#depoiments-title{
-    color: #414141;
-    font-size: 4rem;
-    font-weight: 600;
-    margin-top: 0px;
-
+#depoiments-title {
+  color: #414141;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 0px;
 }
 
-#depoiments-description{
-    color: #414141;
-    font-size: 1.2rem;
+#depoiments-description {
+  color: #414141;
+  font-size: 1.2rem;
 }
 
-
-
-.slick-prev{
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+.slick-prev {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
+@media only screen and (max-width: 700px) {
+  .slick-prev {
+    transform: scaleX(-1) scale(0.5);
+    margin-left: 30px;
+  }
 
-@media only screen and (max-width: 700px){
-   
-    .slick-prev{
-        transform: scaleX(-1) scale(0.5);
-        margin-left: 30px;
-    }
-    
-    .slick-next{
-        transform: scale(0.5);
-        margin-right: 30px;
-    }
+  .slick-next {
+    transform: scale(0.5);
+    margin-right: 30px;
+  }
 
-    #depoiments-title{
-      font-size: 2rem;
-        
-    }
+  #depoiments-title {
+    font-size: 2rem;
+  }
 
-    #depoiments-description{
-        font-size: 1.0rem;
-    }
-
+  #depoiments-description {
+    font-size: 1rem;
+  }
 }
-
