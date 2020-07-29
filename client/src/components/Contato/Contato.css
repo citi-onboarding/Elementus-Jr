@@ -484,7 +484,59 @@ textarea{
         color: #414141;
     }
 
-}
+    .popup-enviado{
+        margin-top: 100px;
+        margin-right: 25vw;
+        width: 150px;
+        height: 50px;
+    }
+    
+    .popup-enviado-desactived{
+        margin-top: 100px;
+        margin-right: 25vw;
+        width: 150px;
+        height: 50px;
+    }
+
+    .botaopopup{        
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    
+    .botaopopup-desactived{ 
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .popup-erro{
+        margin-top: 100px;
+        margin-right: 25vw;
+        width: 150px;
+        height: 50px;
+    }
+    
+    .popup-erro-desactived{
+        margin-top: 100px;
+        margin-right: 25vw;
+        width: 150px;
+        height: 50px;
+    }
+
+    .botaopopup-erro{
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+   }
+    
+    .botaopopup-erro-desactived{
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+};
 
 
 
