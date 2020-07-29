@@ -7,7 +7,7 @@ function Banner() {
   const [Banner, setBanner] = useState([]);
 
   const loadBanner = async () => {
-    const res = await axios.get("https://elementusjr.herokuapp.com/api/banner");
+    const res = await axios.get('https://elementusjr.herokuapp.com/api/banner');
     setBanner(res.data);
   };
 
