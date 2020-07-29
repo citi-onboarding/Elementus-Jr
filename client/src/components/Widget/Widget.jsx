@@ -8,11 +8,12 @@ function Widget(){
     const [msg, setMsg] = useState("");
     const [widget, setWidget] = useState("widgetTextBoxDesactived");
     const [background, setBackground] = useState("backgroundWidgetDesactived");
+    const [boxShadowWidget, setBoxShadowWidget] = useState("back-shadow-widget-desactived");
     const target = `https://api.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(msg)}`;
     const backgroundWidget = document.getElementsByClassName("backgroundWidgetDesactived");
 
     useEffect(()=>{
-        backgroundWidget[0].addEventListener("click", ()=>{setWidget("widgetTextBoxDesactived"); setBackground("backgroundWidgetDesactived");}, false);
+        backgroundWidget[0].addEventListener("click", ()=>{setWidget("widgetTextBoxDesactived"); setBackground("backgroundWidgetDesactived"); setBoxShadowWidget("back-shadow-widget-desactived");}, false);
     }, []);
     
     
@@ -32,7 +33,8 @@ function Widget(){
                         </button>
                     </div>
                 </div>
-                <button className="buttonWidget" onClick={()=> [setWidget("widgetTextBox"), setBackground("backgroundWidget")]}> <img src={chatbox} alt=""/> </button>
+                <button className="buttonWidget" onClick={()=> [setWidget("widgetTextBox"), setBackground("backgroundWidget"), setBoxShadowWidget("back-shadow-widget")]}> <img src={chatbox} alt=""/> </button>
+            <div className={boxShadowWidget}></div>
         </section>
     )
 };
