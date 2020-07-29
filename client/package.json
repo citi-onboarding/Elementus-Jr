@@ -8,8 +8,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
-    "react-slick": "^0.26.1",
-    "webpack": "^4.42.0"
+    "react-slick": "^0.26.1"
   },
   "scripts": {
     "serverwin": "react-scripts build && rd /q ..\\server\\public && move .\\build ..\\server\\public",

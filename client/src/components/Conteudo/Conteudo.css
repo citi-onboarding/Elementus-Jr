@@ -1,5 +1,5 @@
 .section-conteudo {
-  padding: 8vh 10vw;
+  padding: 10vh 10vw 15vh 10vw;
 }
 
 .background-estilo {
@@ -150,7 +150,7 @@
 
 @media only screen and (max-width: 1080px) {
   .section-conteudo {
-    padding: 0;
+    padding: 10vh 0vw 15vh 0vw;
   }
 
   .background-estilo {

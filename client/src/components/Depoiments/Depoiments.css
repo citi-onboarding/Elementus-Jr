@@ -1,7 +1,20 @@
 .depoiments {
   position: relative;
   width: 78vw;
-  padding: 5vw 10vw 10vw 10vw;
+  padding: 10vh 10vw 5vh 10vw;
+}
+
+.Grey-box-d {
+  background-color: #414141;
+  opacity: 0.1;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 60vh;
+  width: 92vw;
+  left: 8vw;
+  position: absolute;
+  margin-top: 460px;
+  z-index: -2;
 }
 
 .depoiments-top {
@@ -22,20 +35,83 @@
   font-size: 1.2rem;
 }
 
-.slick-prev {
+.depoiments .slick-dots li {
+  content: none;
+  height: 10px;
+  width: 10px;
+  background-color: #414141;
+  opacity: 0.15;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px #00222d33;
+  transform: scale(1);
+}
+
+.depoiments .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin-top: 100px;
+  list-style: none;
+  text-align: center;
+}
+
+.depoiments .slick-dots li {
+  content: none;
+  height: 10px;
+  width: 10px;
+  background-color: #414141;
+  opacity: 0.15;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px #00222d33;
+  transform: scale(1.2);
+}
+
+.depoiments .Slider .slick-dots .slick-active {
+  background-color: #414141;
+  opacity: 0.35;
+  box-shadow: none;
+  transform: scale(1.8);
+}
+
+.depoiments .slick-dots li button:before {
+  content: none;
+}
+
+.depoiments .slick-prev {
   -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  transform: scaleX(-1) scale(0.8);
+}
+
+.depoiments .slick-next {
+  margin-right: 5vw;
+  transform: scale(0.8);
+}
+
+.depoiments .slick-prev:before {
+  content: url(arrow.svg);
+  transform: rotate(180deg) !important;
+}
+
+.depoiments .slick-next:before {
+  content: url(arrow.svg);
+}
+
+@media only screen and (max-width: 1080px) {
+  .Grey-box-d {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-  .slick-prev {
+  .depoiments .slick-prev {
     transform: scaleX(-1) scale(0.5);
-    margin-left: 30px;
+    margin-left: 3vw;
   }
 
-  .slick-next {
+  .depoiments .slick-next {
     transform: scale(0.5);
-    margin-right: 30px;
+    margin-right: 3vw;
   }
 
   #depoiments-title {

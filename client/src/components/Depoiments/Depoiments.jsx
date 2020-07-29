@@ -28,6 +28,9 @@ function Depoiments() {
 
   return (
     <main id="depoimentos" className="depoiments">
+      <div className="Grey-box-d">
+        <p></p>
+      </div>
       <div className="depoiments-card">
         <div className="depoiments-top">
           <p id="depoiments-description">
@@ -52,7 +55,7 @@ function Depoiments() {
                 ClientName={ClientName}
                 CompanyFunction={CompanyFunction}
                 Depoiment={Depoiment}
-                image={image}
+                image={image[0]}
                 Facebook={Facebook}
                 Linkedin={Linkedin}
                 Instagram={Instagram}
