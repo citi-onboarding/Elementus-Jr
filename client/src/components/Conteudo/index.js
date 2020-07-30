@@ -1,3 +1,3 @@
-import Conteudo from '.\\Conteudo';
+import Conteudo from ".\\Conteudo";
 
-export default Conteudo
+export default Conteudo;

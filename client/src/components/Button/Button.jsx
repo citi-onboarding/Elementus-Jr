@@ -1,5 +1,5 @@
-import React from 'react';
-import '.\\Button.css';
+import React from "react";
+import ".\\Button.css";
 
 const Button = ({
   Title,
@@ -8,15 +8,21 @@ const Button = ({
   buttonTextColor,
   onClick,
 }) => {
-
   return (
     <div>
-      <button onClick = {onClick} style={{ backgroundColor: buttonColor, width: buttonSize, color: buttonTextColor }} className = {'button'} >
-          <p className="text">{Title}</p>
+      <button
+        onClick={onClick}
+        style={{
+          backgroundColor: buttonColor,
+          width: buttonSize,
+          color: buttonTextColor,
+        }}
+        className={"button"}
+      >
+        <p className="text">{Title}</p>
       </button>
     </div>
-);
+  );
+};
 
-}
-
-  export default Button;
+export default Button;

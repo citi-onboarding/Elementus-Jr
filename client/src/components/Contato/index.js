@@ -1,3 +1,3 @@
-import Contato from './Contato';
+import Contato from "./Contato";
 
 export default Contato;
