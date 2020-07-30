@@ -56,14 +56,14 @@ function Contato() {
     ) {
       avisoErro();
     } else {
-      // const req = {
-      //   nome: nome,
-      //   nomeEmpresa: nomeEmpresa,
-      //   email: email,
-      //   telefone: telefone,
-      //   mensagem: mensagem,
-      // };
-      // const res = await axios.post("https://elementusjr.herokuapp.com/api/contato", req);
+      const req = {
+        nome: nome,
+        nomeEmpresa: nomeEmpresa,
+        email: email,
+        telefone: telefone,
+        mensagem: mensagem,
+      };
+      const res = await axios.post("https://elementusjr.herokuapp.com/api/contato", req);
       avisoEnviado();
     }
   }
