@@ -75,6 +75,7 @@
   font-size: 1.2rem;
   padding-left: 1vw;
   padding-right: 1vw;
+  outline: none;
 }
 
 .inputNameEmpresa {
@@ -85,6 +86,7 @@
   font-size: 1.2rem;
   padding-left: 1vw;
   padding-right: 1vw;
+  outline: none;
 }
 
 .inputEmail {
@@ -95,6 +97,7 @@
   font-size: 1.2rem;
   padding-left: 1vw;
   padding-right: 1vw;
+  outline: none;
 }
 
 .inputTelefone {
@@ -105,6 +108,7 @@
   font-size: 1.2rem;
   padding-left: 1vw;
   padding-right: 1vw;
+  outline: none;
 }
 
 .inputMensagem {
@@ -115,11 +119,13 @@
   font-size: 1.2rem;
   padding-left: 1vw;
   padding-top: 1vh;
+  outline: none;
 }
 
 textarea {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
+  outline: none;
 }
 
 .buttonEnviar {
@@ -134,6 +140,111 @@ textarea {
   font-size: 1.3rem;
   color: #414141;
   cursor: pointer;
+  outline: none;
+}
+
+.popup-enviado {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  margin-top: 100px;
+  margin-right: 100px;
+  width: 300px;
+  height: 50px;
+  transition: 1s;
+}
+
+.popup-enviado-desactived {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  margin-top: 100px;
+  margin-right: 100px;
+  width: 300px;
+  height: 50px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.botaopopup {
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 3px 12px #00000029;
+  background-color: rgb(67, 69, 226);
+  color: white;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  transition: 1s;
+}
+
+.botaopopup-desactived {
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 3px 12px #00000029;
+  background-color: rgb(67, 69, 226);
+  color: white;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  opacity: 0;
+  transition: 1s;
+}
+
+.popup-erro {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  margin-top: 100px;
+  margin-right: 100px;
+  width: 300px;
+  height: 50px;
+  transition: 1s;
+}
+
+.popup-erro-desactived {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  margin-top: 100px;
+  margin-right: 100px;
+  width: 300px;
+  height: 50px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.botaopopup-erro {
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 3px 12px #00000029;
+  background-color: rgb(248, 54, 54);
+  color: white;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  transition: 1s;
+}
+
+.botaopopup-erro-desactived {
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 3px 12px #00000029;
+  background-color: rgb(248, 54, 54);
+  color: white;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  opacity: 0;
+  transition: 1s;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -367,6 +478,58 @@ textarea {
     height: 6vh;
     font-size: 1.3rem;
     color: #414141;
+  }
+
+  .popup-enviado {
+    margin-top: 100px;
+    margin-right: 25vw;
+    width: 150px;
+    height: 50px;
+  }
+
+  .popup-enviado-desactived {
+    margin-top: 100px;
+    margin-right: 25vw;
+    width: 150px;
+    height: 50px;
+  }
+
+  .botaopopup {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .botaopopup-desactived {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .popup-erro {
+    margin-top: 100px;
+    margin-right: 25vw;
+    width: 150px;
+    height: 50px;
+  }
+
+  .popup-erro-desactived {
+    margin-top: 100px;
+    margin-right: 25vw;
+    width: 150px;
+    height: 50px;
+  }
+
+  .botaopopup-erro {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .botaopopup-erro-desactived {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
   }
 }
 

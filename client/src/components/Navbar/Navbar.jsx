@@ -1,14 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./Navbar.css";
 import logo from "./logo.png";
 import botao from "./botao.png";
 import botaoX from "./botaoX.png";
+import instagram_logo from "./Instagram-logo.svg";
+import facebook_logo from "./Facebook-logo.svg";
+import linkedin_logo from "./Linkedin-logo.svg";
 
 function Navbar() {
+  const [LinkSocialNetwork, setLinkSocialNetwork] = useState([]);
   const navbar = document.getElementsByClassName("navbar");
   const img = document.getElementsByClassName("img");
   const secondBackground = document.getElementById("secondBackground");
   const [imgButton, setImgButton] = useState(botao);
+
+  const loadLinkSocialNetwork = async () => {
+    const res = await axios.get("http://localhost:3001/api/informacoes");
+    setLinkSocialNetwork(res.data[0]);
+  };
+  useEffect(() => {
+    loadLinkSocialNetwork();
+  }, []);
 
   window.onscroll = scroll;
 
@@ -142,6 +155,39 @@ function Navbar() {
             </a>
           </button>
         </li>
+
+        <div className="boxSidebarSocialNetwork">
+          <button
+            onClick={() => window.open(LinkSocialNetwork.linkInstagram)}
+            className="buttonSidebarSocialNetwork"
+          >
+            <img
+              className="imgLogoSideBarSocialNetwork"
+              src={instagram_logo}
+              alt=""
+            />
+          </button>
+          <button
+            onClick={() => window.open(LinkSocialNetwork.linkFacebook)}
+            className="buttonSidebarSocialNetwork"
+          >
+            <img
+              className="imgLogoSideBarSocialNetwork"
+              src={facebook_logo}
+              alt=""
+            />
+          </button>
+          <button
+            onClick={() => window.open(LinkSocialNetwork.linkLinkedin)}
+            className="buttonSidebarSocialNetwork"
+          >
+            <img
+              className="imgLogoSideBarSocialNetwork"
+              src={linkedin_logo}
+              alt=""
+            />
+          </button>
+        </div>
       </ul>
 
       <div className="botao">

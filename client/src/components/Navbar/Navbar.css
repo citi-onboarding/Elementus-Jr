@@ -264,4 +264,25 @@ html {
     border: none;
     width: 50vw;
   }
+
+  .buttonSidebarSocialNetwork {
+    width: 30%;
+    height: 40%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .imgLogoSideBarSocialNetwork {
+    width: 70%;
+    height: 70%;
+  }
+
+  .boxSidebarSocialNetwork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    padding-top: 10vh;
+  }
 }

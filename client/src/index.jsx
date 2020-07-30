@@ -10,12 +10,14 @@ import {
   Trilha,
   DepoimentsCard,
   Depoiments,
+  Widget,
 } from ".\\components";
 
 function App() {
   return (
     <div className="app">
       <Navbar />
+      <Widget />
       <Banner />
       <Services />
       <Trilha />

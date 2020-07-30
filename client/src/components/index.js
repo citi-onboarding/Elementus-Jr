@@ -9,6 +9,7 @@ import Trilha from ".\\Trilha";
 import Footer from ".\\Footer";
 import DepoimentsCard from ".\\DepoimentsCard";
 import Depoiments from ".\\Depoiments";
+import Widget from ".\\Widget";
 
 export {
   Button,
@@ -22,4 +23,5 @@ export {
   Footer,
   DepoimentsCard,
   Depoiments,
+  Widget,
 };

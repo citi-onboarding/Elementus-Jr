@@ -9,6 +9,13 @@ function Contato() {
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
   const [mensagem, setMensagem] = useState("");
+  const [popupEnvio, setPopupEnvio] = useState("popup-enviado-desactived");
+  const [botaoPopup, setBotaoPopup] = useState("botaopopup-desactived");
+  const [popupErro, setPopupErro] = useState("popup-erro-desactived");
+  const [botaoPopupErro, setBotaoPopupErro] = useState(
+    "botaopopup-erro-desactived"
+  );
+
   const boxEscrita1 = (e) => {
     setNome(e.target.value);
   };
@@ -24,19 +31,45 @@ function Contato() {
   const boxEscrita5 = (e) => {
     setMensagem(e.target.value);
   };
-  async function sendMail() {
-    const req = {
-      nome: nome,
-      nomeEmpresa: nomeEmpresa,
-      email: email,
-      telefone: telefone,
-      mensagem: mensagem,
-    };
-    const res = await axios.post("http://localhost:3001/api/contato", req);
-    console.log(res);
+
+  function avisoEnviado() {
+    setPopupErro("popup-erro-desactived");
+    setBotaoPopupErro("botaopopup-erro-desactived");
+    setPopupEnvio("popup-enviado");
+    setBotaoPopup("botaopopup");
   }
+
+  function avisoErro() {
+    setPopupEnvio("popup-enviado-desactived");
+    setBotaoPopup("botaopopup-desactived");
+    setPopupErro("popup-erro");
+    setBotaoPopupErro("botaopopup-erro");
+  }
+
+  async function sendMail() {
+    if (
+      nome === "" ||
+      nomeEmpresa === "" ||
+      email === "" ||
+      telefone === "" ||
+      mensagem === ""
+    ) {
+      avisoErro();
+    } else {
+      const req = {
+        nome: nome,
+        nomeEmpresa: nomeEmpresa,
+        email: email,
+        telefone: telefone,
+        mensagem: mensagem,
+      };
+      const res = await axios.post("http://localhost:3001/api/contato", req);
+      avisoEnviado();
+    }
+  }
+
   return (
-    <div id="contato" className="background">
+    <section id="contato" className="background">
       <div className="background1">
         <img className="imgContato" src={imgContato} alt="" />
       </div>
@@ -71,7 +104,7 @@ function Contato() {
             <input
               onChange={boxEscrita4}
               className="inputTelefone"
-              type="Number"
+              type="text"
               placeholder="Telefone"
             />
             <textarea
@@ -81,12 +114,39 @@ function Contato() {
               placeholder="Mensagem"
             />
           </div>
-          <button onClick={sendMail} className="buttonEnviar">
+          <button
+            onClick={() => {
+              sendMail();
+            }}
+            className="buttonEnviar"
+          >
             Enviar
           </button>
         </div>
       </div>
-    </div>
+      <div className={popupEnvio}>
+        <button
+          onClick={() => {
+            setPopupEnvio("popup-enviado-desactived");
+            setBotaoPopup("botaopopup-desactived");
+          }}
+          className={botaoPopup}
+        >
+          Mensagem enviada com sucesso!
+        </button>
+      </div>
+      <div className={popupErro}>
+        <button
+          onClick={() => {
+            setPopupErro("popup-erro-desactived");
+            setBotaoPopupErro("botaopopup-erro-desactived");
+          }}
+          className={botaoPopupErro}
+        >
+          Cheque se esqueceu algo, nao enviado!
+        </button>
+      </div>
+    </section>
   );
 }
 
