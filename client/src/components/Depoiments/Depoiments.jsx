@@ -18,7 +18,7 @@ function Depoiments() {
   const [depoiments, setDepoiments] = useState([]);
 
   const loadDepoiments = async () => {
-    const res = await axios.get("http://localhost:3001/api/depoiments");
+    const res = await axios.get("https://elementusjr.herokuapp.com/api/depoiments");
     setDepoiments(res.data);
   };
 
