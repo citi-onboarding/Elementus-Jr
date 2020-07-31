@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0071bf17.chunk.css",
+    "main.js": "/static/js/main.7c8b3210.chunk.js",
+    "main.js.map": "/static/js/main.7c8b3210.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
+    "static/js/2.28657cdb.chunk.js": "/static/js/2.28657cdb.chunk.js",
+    "static/js/2.28657cdb.chunk.js.map": "/static/js/2.28657cdb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.81de278fc87b7810891e6e49f0e9c0b7.js": "/precache-manifest.81de278fc87b7810891e6e49f0e9c0b7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.0071bf17.chunk.css.map": "/static/css/main.0071bf17.chunk.css.map",
+    "static/js/2.28657cdb.chunk.js.LICENSE.txt": "/static/js/2.28657cdb.chunk.js.LICENSE.txt",
+    "static/media/Contato.png": "/static/media/Contato.c59d089f.png",
+    "static/media/Facebook-logo.svg": "/static/media/Facebook-logo.fdae531a.svg",
+    "static/media/Instagram-logo.svg": "/static/media/Instagram-logo.6a60a63d.svg",
+    "static/media/Linkedin-logo.svg": "/static/media/Linkedin-logo.f88f6247.svg",
+    "static/media/Depoiments.css": "/static/media/arrow.42b8b677.svg",
+    "static/media/citi.svg": "/static/media/citi.c0e1fec3.svg",
+    "static/media/code.svg": "/static/media/code.b5e8bae6.svg",
+    "static/media/conversation.svg": "/static/media/conversation.0e36ecab.svg",
+    "static/media/email-icon.svg": "/static/media/email-icon.1289f1bc.svg",
+    "static/media/heart.svg": "/static/media/heart.d9f3a75e.svg",
+    "static/media/phone-icon.svg": "/static/media/phone-icon.47a5680c.svg",
+    "static/media/quote.svg": "/static/media/quote.0e8d813e.svg",
+    "static/media/send.svg": "/static/media/send.69e592e4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09b85ec0.js",
+    "static/js/2.28657cdb.chunk.js",
+    "static/css/main.0071bf17.chunk.css",
+    "static/js/main.7c8b3210.chunk.js"
+  ]
+}

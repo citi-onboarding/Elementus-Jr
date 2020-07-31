@@ -63,7 +63,7 @@ function Contato() {
         telefone: telefone,
         mensagem: mensagem,
       };
-      const res = await axios.post("http://localhost:3001/api/contato", req);
+      const res = await axios.post("https://elementusjr.herokuapp.com/api/contato", req);
       avisoEnviado();
     }
   }

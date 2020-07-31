@@ -9,7 +9,7 @@ function Conteudo() {
   const [newsletter, setNewsletter] = useState([]);
 
   const loadNewsletter = async () => {
-    const res = await axios.get("http://localhost:3001/api/informacoes");
+    const res = await axios.get("https://elementusjr.herokuapp.com/api/informacoes");
     setNewsletter(res.data[0].linkNewsletter);
   };
 
@@ -18,7 +18,7 @@ function Conteudo() {
   }, []);
 
   const loadConteudo = async () => {
-    const res = await axios.get("http://localhost:3001/api/conteudo");
+    const res = await axios.get("https://elementusjr.herokuapp.com/api/conteudo");
     setConteudo(res.data);
   };
 
