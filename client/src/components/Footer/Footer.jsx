@@ -14,7 +14,7 @@ function Footer() {
   const [Footer, setFooter] = useState([]);
 
   const loadFooter = async () => {
-    const res = await axios.get("http://localhost:3001/api/informacoes");
+    const res = await axios.get("https://elementusjr.herokuapp.com/api/informacoes");
     setFooter(res.data);
   };
 

@@ -37,7 +37,7 @@ function Services() {
   const [services, setServices] = useState([]);
 
   const loadServices = async () => {
-    const res = await axios.get("http://localhost:3001/api/services");
+    const res = await axios.get("https://elementusjr.herokuapp.com/api/services");
     setServices(res.data);
   };
 

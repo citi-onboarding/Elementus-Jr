@@ -16,7 +16,7 @@ function Navbar() {
   const [imgButton, setImgButton] = useState(botao);
 
   const loadLinkSocialNetwork = async () => {
-    const res = await axios.get("http://localhost:3001/api/informacoes");
+    const res = await axios.get("https://elementusjr.herokuapp.com/api/informacoes");
     setLinkSocialNetwork(res.data[0]);
   };
   useEffect(() => {

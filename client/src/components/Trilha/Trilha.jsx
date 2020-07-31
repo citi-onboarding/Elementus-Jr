@@ -8,7 +8,7 @@ function Trilha(){
     const[windowWidth, setWindowWidth] = useState(false);
 
     const loadTrilha = async () => {
-        const res = await axios.get("http://localhost:3001/api/trilha");
+        const res = await axios.get("https://elementusjr.herokuapp.com/api/trilha");
         setImg_1(res.data[0].imagem1.url);
         setImg_2(res.data[0].imagem2.url);
     };
