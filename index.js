@@ -1,7 +1,6 @@
 const keystone = require('keystone');
 const path = require('path');
 
-
 require('dotenv').config();
 
 keystone.init({
