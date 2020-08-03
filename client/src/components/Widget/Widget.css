@@ -119,6 +119,7 @@
     width: 800px;
     height: 800px;
     transition: 0.3s;
+    filter: blur(20px);
 }
 
 .back-shadow-widget-desactived{
