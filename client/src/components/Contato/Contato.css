@@ -118,8 +118,10 @@
   height: 10vh;
   font-size: 1.2rem;
   padding-left: 1vw;
+  padding-right: 1vw;
   padding-top: 1vh;
   outline: none;
+  resize: none;
 }
 
 textarea {
@@ -607,6 +609,7 @@ textarea {
     font-size: 1rem;
     padding-left: 4vw;
     padding-top: 1vh;
+    padding-right: 4vw;
   }
 
   .buttonEnviar {
