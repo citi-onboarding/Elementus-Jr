@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.d3a61c39.chunk.css",
-    "main.js": "/static/js/main.7c8b3210.chunk.js",
-    "main.js.map": "/static/js/main.7c8b3210.chunk.js.map",
+    "main.css": "/static/css/main.cf6c5118.chunk.css",
+    "main.js": "/static/js/main.0758c57c.chunk.js",
+    "main.js.map": "/static/js/main.0758c57c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
     "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
     "static/js/2.28657cdb.chunk.js": "/static/js/2.28657cdb.chunk.js",
     "static/js/2.28657cdb.chunk.js.map": "/static/js/2.28657cdb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2f1ca096d888f35ee9deeeb86284a270.js": "/precache-manifest.2f1ca096d888f35ee9deeeb86284a270.js",
+    "precache-manifest.da52426b6913c8c530cbee93a2fcd21d.js": "/precache-manifest.da52426b6913c8c530cbee93a2fcd21d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d3a61c39.chunk.css.map": "/static/css/main.d3a61c39.chunk.css.map",
+    "static/css/main.cf6c5118.chunk.css.map": "/static/css/main.cf6c5118.chunk.css.map",
     "static/js/2.28657cdb.chunk.js.LICENSE.txt": "/static/js/2.28657cdb.chunk.js.LICENSE.txt",
     "static/media/Contato.png": "/static/media/Contato.c59d089f.png",
     "static/media/Facebook-logo.svg": "/static/media/Facebook-logo.fdae531a.svg",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.09b85ec0.js",
     "static/js/2.28657cdb.chunk.js",
-    "static/css/main.d3a61c39.chunk.css",
-    "static/js/main.7c8b3210.chunk.js"
+    "static/css/main.cf6c5118.chunk.css",
+    "static/js/main.0758c57c.chunk.js"
   ]
 }

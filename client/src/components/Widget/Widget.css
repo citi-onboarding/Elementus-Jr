@@ -83,6 +83,7 @@
     padding: 5px 5px;
     width: 300px;
     outline: none;
+    resize: none;
 }
 
 .Msg-Button-Textbox{
@@ -119,6 +120,7 @@
     width: 800px;
     height: 800px;
     transition: 0.3s;
+    filter: blur(20px);
 }
 
 .back-shadow-widget-desactived{

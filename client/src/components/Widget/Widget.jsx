@@ -33,7 +33,7 @@ function Widget(){
                         </button>
                     </div>
                 </div>
-                <button className="buttonWidget" onClick={()=> [setWidget("widgetTextBox"), setBackground("backgroundWidget"), setBoxShadowWidget("back-shadow-widget")]}> <img src={chatbox} alt=""/> </button>
+                <button className="buttonWidget" onClick={widget === "widgetTextBox"? (()=> [setWidget("widgetTextBoxDesactived"), setBackground("backgroundWidgetDesactived"), setBoxShadowWidget("back-shadow-widget-desactived")]) : (()=> [setWidget("widgetTextBox"), setBackground("backgroundWidget"), setBoxShadowWidget("back-shadow-widget")]) }> <img src={chatbox} alt=""/> </button>
             <div className={boxShadowWidget}></div>
         </section>
     )
