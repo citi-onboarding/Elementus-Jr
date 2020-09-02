@@ -25,7 +25,6 @@ function Conteudo() {
   useEffect(() => {
     loadConteudo();
   }, []);
-  console.log(Conteudo);
 
   useEffect(() => {
     setIsMobile(window.innerWidth <= 1080);

@@ -31,7 +31,7 @@
 .widget-chat {
     position: fixed;
     z-index: 4;
-    bottom: 18vh;
+    bottom: 20vh;
     right: 5vw;
     width: 380px;
     height: 140px;
@@ -75,11 +75,28 @@
     border: none;
     align-self: flex-end;
     height: 40px;
-    width: 12%;
+    width: 35px;
     margin-top: -40px;
     border: 2px solid #DFDFDF;
     border-left: none;
     cursor: pointer;
     outline: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .widget-text {
+        font-size: 1rem;
+    }
+
+    .button-widget {
+        width: 55px;
+        height: 55px;
+    }
+
+    .widget-chat {
+        width: 230px;
+    }
+
 }
 
