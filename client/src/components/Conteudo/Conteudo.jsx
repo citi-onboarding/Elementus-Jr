@@ -10,7 +10,7 @@ function Conteudo() {
 
   const loadNewsletter = async () => {
     const res = await axios.get("https://elementusjr.herokuapp.com/api/informacoes");
-    setNewsletter(res.data[0].linkNewsletter);
+    setNewsletter(res?.data[0]?.linkNewsletter);
   };
 
   useEffect(() => {

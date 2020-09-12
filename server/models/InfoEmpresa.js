@@ -12,7 +12,7 @@ InfoEmpresa.add({
     linkInstagram: {type: Types.Url, required: true, index: true, initial: true },
     endereco: {type: Types.Text, required: true, index: true, initial: true },
     telefone: {type: Types.Text, required: true, index: true, initial: true },
-    contatoWhatsapp: {type: Types.Integer, required: true, index: true, initial: true },
+    contatoWhatsapp: {type: Types.Number, required: true, index: true, initial: true },
     linkNewsletter: {type: Types.Url, required: true, index: true, initial: true },
 });
 

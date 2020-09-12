@@ -12,7 +12,7 @@ function Widget(){
 
 	const loadNumber = async () => {
     const res = await axios.get("https://elementusjr.herokuapp.com/api/informacoes");
-    setNumber(res.data[0].contatoWhatsapp);
+    setNumber(res?.data[0]?.contatoWhatsapp);
   };
 
   useEffect(() => {
