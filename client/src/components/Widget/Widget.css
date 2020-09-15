@@ -1,115 +1,20 @@
-.backgroundWidget{
-    display: flex;
-    position: fixed;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-}
-
-.backgroundWidgetDesactived{
-    display: none;
-}
-
-.buttonWidget{
+.button-widget{
     position: fixed;
     z-index: 4;
-    bottom: 0;
-    right: 0;
-    margin: 5vw 5vh;
+    bottom: 8vh;
+    right: 5vw;
     background-color:#FFDC00;
     box-shadow: 0px 3px 12px #00000029;
     cursor: pointer;
     border: none;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 100px;
     outline: none;
+    filter: blur(0px);
 }
 
-.widgetTextBox{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 380px;
-    height: 140px;
-    padding: 20px 30px;
-    box-shadow: 0px 2px 8px #00000029;
-    border: 2px solid #DFDFDF;
-    border-radius: 15px;
-    opacity: 1;
-    margin-bottom: 15vh;
-    margin-right: 8vw;
-    z-index: 4;
-    padding-right: 10px;
-    transition: 0.3s;
-}
-
-.widgetTextBoxDesactived{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 380px;
-    height: 140px;
-    padding: 20px 30px;
-    box-shadow: 0px 2px 8px #00000029;
-    border: 2px solid #DFDFDF;
-    border-radius: 15px;
-    opacity: 0;
-    margin-bottom: 15vh;
-    margin-right: 8vw;
-    z-index: -1;
-    padding-right: 10px;
-    transition: 0.3s;
-}
-
-.TituloTextBox{
-    font-size: 1.3rem;
-    font-weight: 300;
-    margin-top: 0;
-}
-
-.MsgTextBox{
-    border: 2px solid #A2A2A2;
-    border-radius: 15px;
-    opacity: 1;
-    padding: 5px 5px;
-    width: 300px;
-    outline: none;
-    resize: none;
-}
-
-.Msg-Button-Textbox{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ButtonTextBox{
-    border-radius: 30px;
-    width: 60px;
-    height: 60px;
-    background-color: #FFDC00;
-    border: 2px solid #A2A2A2;
-    cursor: pointer;
-    outline: none;
-}
-
-.img-button-enviar{
-    width: 25px;
-    height: 25px;
-    padding-right: 3px;
-    padding-top: 3px;
-}
-
-.back-shadow-widget{
+.widget-background {
     position: fixed;
     z-index: 3;
     bottom: 0;
@@ -123,59 +28,75 @@
     filter: blur(20px);
 }
 
-.back-shadow-widget-desactived{
+.widget-chat {
     position: fixed;
-    z-index: -2;
-    bottom: 0;
-    right: 0;
-    background-color: transparent;
-    border-top-left-radius: 1000px;
-    width: 1px;
-    height: 1px;
-    transition: 0.3s;
+    z-index: 4;
+    bottom: 20vh;
+    right: 5vw;
+    width: 380px;
+    height: 140px;
+    padding: 15px 30px 0px 30px;
+    box-shadow: 0px 2px 8px #00000029;
+    border: 2px solid #DFDFDF;
+    border-radius: 15px;
+    background-color: #fff;
 }
 
-@media only screen and (max-width: 700px){
-    .buttonWidget{
-        margin: 20vw 5vh;
-        width: 65px;
-        height: 65px;
-    }
-
-    .widgetTextBox{
-        width: 70vw;
-        height: 15vh;
-        padding: 20px 30px;
-        margin-bottom: 150px;
-    }
-
-    .widgetTextBoxDesactived{
-        width: 70vw;
-        height: 15vh;
-        padding: 20px 30px;
-        margin-bottom: 150px;
-        opacity: 0;
-        z-index: -1;
-    }
-
-    .TituloTextBox{
-        font-size: 0.9rem;
-    }
-    
-    .ButtonTextBox{
-        width: 45px;
-        height: 45px;
-    }
-
-    .MsgTextBox{
-        opacity: 1;
-        padding: 5px 5px;
-        width: 50vw;
-        height: 6vh;
-    }
-
-    .back-shadow-widget{
-        width: 1000px;
-        height: 1000px;
-    }
+.widget-text {
+    color: #414141;
+    font-size: 1.2rem;
 }
+
+.widget-input-button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-input {
+    width: 100%;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    height: 40px;
+    border: 2px solid #DFDFDF;
+    padding: 5px 5px;
+    padding-left: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.widget-submit-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background-color: #FFDC00;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+    align-self: flex-end;
+    height: 40px;
+    width: 35px;
+    margin-top: -40px;
+    border: 2px solid #DFDFDF;
+    border-left: none;
+    cursor: pointer;
+    outline: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .widget-text {
+        font-size: 1rem;
+    }
+
+    .button-widget {
+        width: 55px;
+        height: 55px;
+    }
+
+    .widget-chat {
+        width: 230px;
+    }
+
+}
+

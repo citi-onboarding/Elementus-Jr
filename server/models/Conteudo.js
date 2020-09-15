@@ -3,6 +3,7 @@ const { CloudinaryImage } = require("keystone/lib/fieldTypes");
 const Types = keystone.Field.Types;
 
 const Conteudo = new keystone.List("Conteudo", {
+    map: {name: "autor"},
     nocreate: true,
     nodelete: true 
 });

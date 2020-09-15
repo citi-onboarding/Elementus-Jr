@@ -32,7 +32,6 @@ function Footer() {
           linkInstagram,
           endereco,
           telefone,
-          linkNewsletter,
         }) => (
           <div className="container-footer" key={_id}>
             <div className="white">

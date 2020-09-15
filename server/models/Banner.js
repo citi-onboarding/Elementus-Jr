@@ -2,7 +2,7 @@ const keystone = require("keystone");
 const Types = keystone.Field.Types;
 
 const Banner = new keystone.List("Banner", {
-    map: {name: "banner"},
+    map: {name: "titulo"},
     nocreate: true,
     nodelete: true 
   });
