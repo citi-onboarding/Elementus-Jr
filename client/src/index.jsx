@@ -11,7 +11,7 @@ import {
   DepoimentsCard,
   Depoiments,
   Widget,
-} from ".\\components";
+} from "./Components";
 
 function App() {
   return (
