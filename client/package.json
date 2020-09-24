@@ -10,7 +10,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
     "react-slick": "^0.26.1",
-    "snackbar": "^1.1.0"
+    "snackbar": "^1.1.0",
+    "webpack": "^4.42.0"
   },
   "scripts": {
     "serverwin": "react-scripts build && rd /q ..\\server\\public && move .\\build ..\\server\\public",

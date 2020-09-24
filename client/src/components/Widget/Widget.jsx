@@ -7,7 +7,7 @@ import enviar from "./send.svg";
 function Widget(){
 	const [isOpen, setIsOpen] = useState(false);
 	const [message, setMessage] = useState('');
-	const [number, setNumber] = useState("558192500616");
+	const [number, setNumber] = useState('');
 	const target = `https://api.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(message)}`;
 
 	const loadNumber = async () => {
